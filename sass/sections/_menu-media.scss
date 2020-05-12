@@ -1,0 +1,84 @@
+@media (min-width: $mobilePhones) {
+    #menu {
+        .breadcrump {}
+        .content {
+            padding-bottom: 60px;
+            .categories {}
+            .shopByTheme {}
+            .pages {
+                padding-bottom: 100px;
+            }
+        }
+        .subContent {
+            .content {
+                .shopByThemeMobile {
+                    margin-bottom: 100px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $tablets) {
+    #menu {
+        width: 50%;
+        left: -50%;
+        .breadcrump {}
+        .content {
+            padding-bottom: 50px;
+            .categories {}
+            .shopByTheme {}
+            .pages {
+                padding-bottom: 75px;
+            }
+        }
+        .subContent {
+            .content {
+                .shopByThemeMobile {
+                    margin-bottom: 75px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $laptops) {
+    #menu {
+        width: 50%;
+        left: -50%;
+        .breadcrump {}
+        .content {
+            padding-bottom: 25px;
+            .categories {}
+            .shopByThemeMobile {
+                display: none;
+            }
+            .shopByThemeLaptop {
+                display: block;
+            }
+            .pages {
+                padding-bottom: 25px;
+            }
+        }
+        .subContent {
+            .content {
+                .shopByThemeMobile {
+                    margin-bottom: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $desktops) {
+    #menu {
+        width: 33.33%;
+        left: -33.33%;
+        .breadcrump {}
+        .content {
+            .categories {}
+            .shopByTheme {}
+            .pages {}
+        }
+    }
+}

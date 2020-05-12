@@ -1,0 +1,29 @@
+.newArrivalsCommon {
+    width: 100%;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    .newArriwalsLine {
+        position: relative;
+        left: 0;
+        font-size: 20px;
+        height: 30px;
+        .newArrivalBold {
+            font-weight: 700;
+            color: black;
+            padding: 0px 5px;
+            position: absolute;
+            width: 125px;
+        }
+        .newArrivalLight {
+            width: 125px;
+            font-weight: 300;
+            padding: 0px 5px;
+            font-family: 'Comic Neue', cursive;
+            color: darken(#f4f4f4, 60);
+            position: absolute;
+        }
+    }
+}

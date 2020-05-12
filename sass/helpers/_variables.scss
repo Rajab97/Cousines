@@ -1,0 +1,12 @@
+$mobilePhones :576px;
+$tablets: 768px;
+$laptops:992px;
+$desktops:1200px;
+$desktopsLarge:1440px;
+$textColor:#313131;
+$textColorRed:#e83c55;
+$textColorWhite:#fff;
+@font-face {
+    font-family: FontName;
+    src: url('../fonts/OpenSans-Bold.ttf') format('ttf'), url('../fonts/OpenSans-BoldItalic.ttf') format('ttf'), url('../fonts/OpenSans-ExtraBold.ttf') format('ttf'), url('../fonts/OpenSans-ExtraBoldItalic.ttf') format('ttf'), url('../fonts/OpenSans-Italic.ttf') format('ttf'), url('../fonts/OpenSans-Light.ttf') format('ttf'), url('../fonts/OpenSans-Regular.ttf') format('ttf'), url('../fonts/OpenSans-SemiBold.ttf') format('ttf'), url('../fonts/OpenSans-SemiBoldItalic.ttf') format('ttf'), url('../fonts/OpenSans-LightItalic.ttf') format('ttf');
+}

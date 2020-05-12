@@ -1,0 +1,210 @@
+#slider-height {
+    height: 100vh;
+    width: 100%;
+}
+
+#slider {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    .swiper-container-h {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+            picture {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .slideContent {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                h1 {
+                    @include font-size($mobilePhones, $desktopsLarge, 45px, 85px);
+                    font-weight: bold;
+                    margin-bottom: 0;
+                }
+                p {
+                    @include font-size($mobilePhones, $desktopsLarge, 9px, 15px);
+                    font-weight: normal;
+                    margin-bottom: 0;
+                }
+                a {
+                    @include font-size($mobilePhones, $desktopsLarge, 14px, 28px);
+                    line-height: 1;
+                    padding: 7px 40px;
+                    border: 1px solid #000;
+                    border-width: 2px;
+                    display: inline-block;
+                    margin-top: 16px;
+                }
+            }
+        }
+        .swiper-pagination-h {
+            position: absolute;
+            bottom: 23%;
+            left: 50%;
+            transform: translateX(-50%);
+            .swiper-pagination-bullet {
+                @include font-size($mobilePhones, $desktopsLarge, 20px, 40px);
+                line-height: 1;
+                width: auto;
+                height: auto;
+                padding: 3px 0px;
+                margin: 0px 10px;
+                display: inline-block;
+                background-color: transparent;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                border-bottom: 2px solid transparent;
+                border-radius: initial;
+                font-weight: bold;
+            }
+            .swiper-pagination-bullet:focus {
+                outline: none;
+            }
+        }
+        .swiper-button-disabled {
+            opacity: 0;
+        }
+        .swiper-button-next {
+            width: auto;
+            height: auto;
+            right: 5%;
+            .buttonContent {
+                img {
+                    width: 25px;
+                    height: 25px;
+                    float: left;
+                }
+                .nextCategory {
+                    float: left;
+                    font-weight: bold;
+                    line-height: 25px;
+                    margin-left: 10px;
+                    @include font-size($mobilePhones, $desktopsLarge, 14px, 28px);
+                    color: #fff;
+                }
+            }
+        }
+        .swiper-button-prev {
+            width: auto;
+            height: auto;
+            left: 5%;
+            .buttonContent {
+                img {
+                    width: 25px;
+                    height: 25px;
+                    float: left;
+                }
+                .prevCategory {
+                    float: left;
+                    font-weight: bold;
+                    line-height: 25px;
+                    margin-right: 10px;
+                    @include font-size($mobilePhones, $desktopsLarge, 14px, 28px);
+                    color: #000;
+                }
+            }
+        }
+        .swiper-button-next:after {
+            content: "";
+        }
+        .swiper-button-prev:after {
+            content: "";
+        }
+        .swiper-next-section {
+            position: absolute;
+            bottom: 14%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            opacity: 1;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            background-color: transparent;
+            .slideNextSectionIcon {
+                width: 100%;
+                height: 100%;
+                animation: float 1.2s ease-in-out infinite;
+            }
+        }
+    }
+    .swiper-container-v {
+        width: 100%;
+        height: 100%;
+        background: #eee;
+        position: relative;
+        .swiper-slide {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-pagination-v {
+            .swiper-pagination-bullet {
+                opacity: 1;
+                width: 4px;
+                height: 4px;
+                background: #000;
+                outline: none;
+                margin: 5px 2px!important;
+            }
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                opacity: 1;
+                border: 1px solid #000;
+                background: transparent;
+                width: 8px;
+                height: 8px;
+                margin: 6px 0!important;
+            }
+        }
+        .swiper-v-button-next {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+            opacity: 1;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            img {
+                width: 100%;
+                height: 100%;
+                animation: float 1.2s ease-in-out infinite;
+            }
+        }
+        .swiper-v-button-next.swiper-button-disabled {
+            display: none;
+        }
+    }
+}

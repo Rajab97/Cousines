@@ -1,0 +1,117 @@
+body {
+    background: #fff;
+    font-family: 'FontName', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    --focus-color: transparent;
+    --scrollbar-width: 0px;
+    --vh: 2.7px;
+    --vh-static: 2.92px;
+    --richmenu-height: 482px;
+    // font-family: 'Comic Neue', cursive;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+}
+
+a:hover {
+    color: inherit;
+}
+
+span,
+strong {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+input {
+    text-rendering: auto;
+    color: -internal-light-dark-color(black, white);
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    -webkit-appearance: textfield;
+    background-color: -internal-light-dark-color(white, black);
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 0px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+
+input:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: "open-sans";
+    src: url(../fonts/OpenSans-Bold.ttf), url(../fonts/OpenSans-BoldItalic.ttf), url(../fonts/OpenSans-ExtraBold.ttf), url(../fonts/OpenSans-ExtraBoldItalic.ttf), url(../fonts/OpenSans-Light.ttf), url(../fonts/OpenSans-LightItalic.ttf), url(../fonts/OpenSans-Regualar.ttf), url(../fonts/OpenSans-SemiBold.ttf), url(../fonts/OpenSans-SemiBoldItalic.ttf), ;
+}
+
+.customScroll::-webkit-scrollbar {
+    width: 5px;
+}
+
+.customScroll::-webkit-scrollbar-track {
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+}
+
+.customScroll::-webkit-scrollbar-thumb {
+    background-color: darken(rgb(232, 232, 232), 10%);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: rgb(232, 232, 232);
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: darken(rgb(232, 232, 232), 10%);
+    border-radius: 5px;
+}

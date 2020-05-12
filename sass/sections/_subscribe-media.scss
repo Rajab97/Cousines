@@ -1,0 +1,249 @@
+@media (max-width: $mobilePhones) {}
+
+@media (min-width: $mobilePhones) {}
+
+@media (min-width: $tablets) {
+    #subscribe {
+        .top {
+            width: 25%;
+            margin-bottom: 25px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .newsLetterForm {
+            h2 {}
+            form {
+                width: 80%;
+                margin: 0 auto;
+                text-align: center;
+                #forEmail {
+                    margin-bottom: 0;
+                    transform: translateY(150%);
+                    transition: all .4s ease;
+                    &.active {
+                        opacity: 0;
+                        transform: translateY(0%);
+                    }
+                }
+                #email {
+                    padding: 15px;
+                    text-align: center;
+                    color: $textColor;
+                    border: 0px solid transparent;
+                    border-bottom: 1px solid $textColor;
+                    width: 100%;
+                    @include font-size($mobilePhones, $desktopsLarge, 20px, 32px);
+                    font-weight: 100;
+                    &::placeholder {
+                        color: $textColor
+                    }
+                }
+                .subscribeFocusContent {
+                    overflow: hidden;
+                    height: 0;
+                    opacity: 0;
+                    .innerSubscribeFocusContent {
+                        height: 50px;
+                        .radioButton {
+                            margin: 0px 10px;
+                            .radioButtonEffect {
+                                display: inline-block;
+                                width: 15px;
+                                height: 15px;
+                                border: 1px solid $textColor;
+                                border-radius: 100%;
+                                margin-right: 10px;
+                                transition: all .4s ease;
+                                &.active {
+                                    background-color: $textColor;
+                                }
+                            }
+                            label {
+                                margin-bottom: 0;
+                            }
+                            input {
+                                display: none;
+                            }
+                        }
+                    }
+                    button {
+                        width: 60%;
+                        padding: 7px 0px;
+                    }
+                }
+                .unSubscribeFocusContent {
+                    button {
+                        width: 60%;
+                        padding: 7px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $laptops) {
+    #subscribe {
+        .top {
+            width: 15%;
+            margin-bottom: 25px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .newsLetterForm {
+            h2 {}
+            form {
+                width: 50%;
+                margin: 0 auto;
+                text-align: center;
+                #forEmail {
+                    margin-bottom: 0;
+                    transform: translateY(150%);
+                    transition: all .4s ease;
+                    &.active {
+                        opacity: 0;
+                        transform: translateY(0%);
+                    }
+                }
+                #email {
+                    padding: 15px;
+                    text-align: center;
+                    color: $textColor;
+                    border: 0px solid transparent;
+                    border-bottom: 1px solid $textColor;
+                    width: 100%;
+                    @include font-size($mobilePhones, $desktopsLarge, 20px, 32px);
+                    font-weight: 100;
+                    &::placeholder {
+                        color: $textColor
+                    }
+                }
+                .subscribeFocusContent {
+                    overflow: hidden;
+                    height: 0;
+                    opacity: 0;
+                    .innerSubscribeFocusContent {
+                        height: 50px;
+                        .radioButton {
+                            margin: 0px 10px;
+                            .radioButtonEffect {
+                                display: inline-block;
+                                width: 12px;
+                                height: 12px;
+                                border: 1px solid $textColor;
+                                border-radius: 100%;
+                                margin-right: 10px;
+                                transition: all .4s ease;
+                                &.active {
+                                    background-color: $textColor;
+                                }
+                            }
+                            label {
+                                margin-bottom: 0;
+                            }
+                            input {
+                                display: none;
+                            }
+                        }
+                    }
+                    button {
+                        width: 60%;
+                        padding: 7px 0px;
+                    }
+                }
+                .unSubscribeFocusContent {
+                    button {
+                        width: 60%;
+                        padding: 7px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $desktops) {
+    #subscribe {
+        .top {
+            width: 15%;
+            margin-bottom: 25px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        .newsLetterForm {
+            h2 {}
+            form {
+                width: 40%;
+                margin: 0 auto;
+                text-align: center;
+                #forEmail {
+                    margin-bottom: 0;
+                    transform: translateY(150%);
+                    transition: all .4s ease;
+                    &.active {
+                        opacity: 0;
+                        transform: translateY(0%);
+                    }
+                }
+                #email {
+                    padding: 15px;
+                    text-align: center;
+                    color: $textColor;
+                    border: 0px solid transparent;
+                    border-bottom: 1px solid $textColor;
+                    width: 100%;
+                    @include font-size($mobilePhones, $desktopsLarge, 20px, 32px);
+                    font-weight: 100;
+                    &::placeholder {
+                        color: $textColor
+                    }
+                }
+                .subscribeFocusContent {
+                    overflow: hidden;
+                    height: 0;
+                    opacity: 0;
+                    .innerSubscribeFocusContent {
+                        height: 50px;
+                        .radioButton {
+                            margin: 0px 10px;
+                            .radioButtonEffect {
+                                display: inline-block;
+                                width: 12px;
+                                height: 12px;
+                                border: 1px solid $textColor;
+                                border-radius: 100%;
+                                margin-right: 10px;
+                                transition: all .4s ease;
+                                &.active {
+                                    background-color: $textColor;
+                                }
+                            }
+                            label {
+                                margin-bottom: 0;
+                            }
+                            input {
+                                display: none;
+                            }
+                        }
+                    }
+                    button {
+                        width: 60%;
+                        padding: 7px 0px;
+                    }
+                }
+                .unSubscribeFocusContent {
+                    button {
+                        width: 60%;
+                        padding: 7px 0px;
+                    }
+                }
+            }
+        }
+    }
+}

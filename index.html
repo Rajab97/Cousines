@@ -6,17 +6,1317 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-
 </head>
-<h1 class="baseH1"></h1>
+<style>
+    @media (max-width: 425px) {
+        #joinLife {
+            background-image: url('assets/img/join-life-small-8.jpg');
+        }
+    }
+    
+    @media (min-width: 425px) {
+        #joinLife {
+            background-image: url('assets/img/join-life-small-8.jpg');
+        }
+    }
+    
+    @media (min-width: 768px) {
+        #joinLife {
+            background-image: url('assets/img/join-life-small-2.jpg');
+        }
+    }
+    
+    @media (min-width: 992px) {
+        #joinLife {
+            background-image: url('assets/img/join-life-3.jpg');
+        }
+    }
+</style>
+<nav id="nav-bar" class="container-fluid">
+    <div class="row">
+        <div class="left">
+            <ul class="clearfix">
+                <li>
+                    <a href="#">
+                        <img class="menuIcon" src="" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="openSearchCommand">
+                        <img class="searchIcon" src="" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="center">
+            <h1 class="colorChangedText logoTitle">Cousines</h1>
+        </div>
+        <div class="right clearfix">
+            <ul class="clearfix">
+                <li>
+                    <a href="#"><img class="signinIcon" src="" alt=""></a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a href="#"><img class="favoritesIcon" src="" alt=""></a>
+                </li>
+                <li class="line"></li>
+                <li>
+                    <a class="chart" href="#"><img class="chartIcon" src="" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div class="navMinSearch ">
+            <div class="outlineSearch openSearchCommand colorChangedText">
+                <img src="" class="searchMinIcon" alt="">
+                <span class="colorChangedText">Search</span>
+            </div>
+        </div>
+    </div>
+</nav>
+<section id="menu">
+    <div class="breadcrump d-flex justify-content-between align-items-center">
+        <span class="breadcrumpTitle">Home</span>
+        <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+    </div>
+    <div class="content baseContent customScroll" menuPath="Home">
+        <div class="categories">
+            <ul class="baseCategories">
+                <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men">
+                    <span class="categoryName">Men</span>
+                    <img class="subcategory" src="assets/img/right.svg">
+                </li>
+                <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women">
+                    <span class="categoryName">Women</span>
+                    <img class="subcategory" src="assets/img/right.svg">
+                </li>
+                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
+                    <span class="categoryName">Kids</span>
+                    <img class="subcategory" src="assets/img/right.svg">
+                </li>
+                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
+                    <span class="categoryName">Sale</span>
+                </li>
+                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
+                    <span class="categoryName">Accessories</span>
+                    <img class="subcategory" src="assets/img/right.svg">
+                </li>
+                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
+                    <span class="categoryName">Shoes</span>
+                    <img class="subcategory" src="assets/img/right.svg">
+                </li>
+            </ul>
+        </div>
+        <div class="shopByThemeMobile">
+            <h3>Shop by theme Mobile</h3>
+            <div class="shopByThemeElements">
+                <ul class="clearfix">
+                    <li><a href="#">Sport</a></li>
+                    <li><a href="#">Live</a></li>
+                    <li><a href="#">Men's New Arrivals</a></li>
+                    <li>
+                        <a href="#"> Women's New Arrivals</a>
+                    </li>
+                    <li>
+                        <a href="#"> Kids' New Arrivals</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="shopByThemeLaptop">
+            <h3>Shop by theme Laptop</h3>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Sport</div>
+                <div class="swiper-slide">Live</div>
+                <div class="swiper-slide">Men's New Arrivals</div>
+                <div class="swiper-slide">Women's New Arrivals</div>
+                <div class="swiper-slide">Kids' New Arrivals</div>
+            </div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+        <div class="pages">
+            <ul>
+                <li>
+                    <a href="#"><img src="assets/img/signin-black.svg" alt=""><span>Log in</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/heart-black.svg" alt=""><span>Favorites</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/bag-black.svg" alt=""><span>Chart</span></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets/img/help.svg" alt=""><span>Help & Support</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="subContent " menuPath="Home/Men">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center"><span class="menuBreadcrumpNav" pathTo="Home">Home</span>/<span>Men</span></p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Clothing">
+                        <span class="categoryName">Clothing</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Shoes">
+                        <span class="categoryName">Shoes</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Accessories">
+                        <span class="categoryName">Accessories</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/LeatherGoods">
+                        <span class="categoryName">Leather goods</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Live</a></li>
+                        <li><a href="#">Novak</a></li>
+                        <li><a href="#">Show</a></li>
+                        <li><a href="#">New</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" subContent " menuPath="Home/Men/Shoes">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                <span>Shoes</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Men's Shoes</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        New Arrivals</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sneakers</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sandals & Slip-Ons</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Men/Clothing">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                <span>Clothing</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Men's Clothing</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+Best Sellers</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+The Original Polo</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+Polos</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        T-Shirts</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sweaters</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sweatshirts</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Button Down Shirts</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                        <li><a href="#">All seasons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Men/Accessories">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                <span>Accessories</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Men's Accessories</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+
+                        Watches</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+
+                        Sunglasses</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+
+                        Fragrance</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Caps & Hats</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Scarves & Gloves</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Socks</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                        <li><a href="#">All seasons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Men/LeatherGoods">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                <span>Leather goods</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Men's Leather goods</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Bags</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        New arrivals</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Small Leather Goods</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+
+                        Belts</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                        <li><a href="#">All seasons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Women">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center"><span class="menuBreadcrumpNav" pathTo="Home">Home</span>/<span>Women</span></p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Clothing">
+                        <span class="categoryName">Clothing</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Shoes">
+                        <span class="categoryName">Shoes</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Accessories">
+                        <span class="categoryName">Accessories</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/LeatherGoods">
+                        <span class="categoryName">Leather goods</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Live</a></li>
+                        <li><a href="#">Novak</a></li>
+                        <li><a href="#">Show</a></li>
+                        <li><a href="#">New</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Women/Shoes">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                <span>Shoes</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Women's Shoes</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        New Arrivals</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sneakers</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sandals & Slip-Ons</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Women/Clothing">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                <span>Clothing</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Women's Clothing</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+Best Sellers</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+The Original Polo</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+Polos</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        T-Shirts</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sweaters</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Sweatshirts</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        Button Down Shirts</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                        <li><a href="#">All seasons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Women/Accessories">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                <span>Accessories</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Women's Accessories</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+
+                        Watches</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+
+                        Sunglasses</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+
+                        Fragrance</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Caps & Hats</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Scarves & Gloves</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                        
+Socks</span>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                        <li><a href="#">All seasons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class=" subContent " menuPath="Home/Women/LeatherGoods">
+        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+            <img src="assets/img/back.svg" class="menuPrevious" alt="">
+            <p class="align-self-center">
+                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                <span>Leather goods</span>
+            </p>
+            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+        </div>
+        <div class="content customScroll">
+            <div class="categories">
+                <ul class="baseCategories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">See All Women's Leather goods</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                            
+    Bags</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                            New arrivals</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+                            
+    Small Leather Goods</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory">
+                        <span class="categoryName">
+    
+                            Belts</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="shopByThemeMobile">
+                <h3>Shop by theme Mobile</h3>
+                <div class="shopByThemeElements">
+                    <ul class="clearfix">
+                        <li><a href="#">Live your life</a></li>
+                        <li><a href="#">Novak new times</a></li>
+                        <li><a href="#">Flouver forever</a></li>
+                        <li><a href="#">All seasons</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+<section id="slider-height"></section>
+<section id="whiteBackground"></section>
+<section id="slider">
+    <div class="swiper-container swiper-container-h">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" category="Man">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" color="#fff">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/man-1-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/man-1.jpg">
+                                <img src="assets/img/man-1.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">Collection</h1>
+                                <p class="colorChangedText">Discover this season’s new collection built around <br> staple pieces and trend-focused items. <br> Men’s Spring Summer Collection</p>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" color="#fff">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/man-2-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/man-2.jpg">
+                                <img src="assets/img/man-2.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">SHOES & BAGS</h1>
+                                <p class="colorChangedText">Explore the new collection of Shoes & Bags <br> Spring Summer Man Collection</p>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                    <div class="swiper-v-button-next">
+                        <div class="buttonContent clearfix"><img class="slideIcon" src="assets/img/down-bold-black.svg" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide" category="Woman">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" color="#fff">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/woman-1-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/woman-1.jpg">
+                                <img src="assets/img/woman-1.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">STORIES</h1>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" color="#fff">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/woman-2-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/woman-2.jpg">
+                                <img src="assets/img/woman-2.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">SHOES & BAGS</h1>
+                                <p class="colorChangedText">Explore the new collection of Shoes & Bags <br> Spring Summer 2020 Woman <br>Selected pieces with new pictures curated for you</p>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" color="#000">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/woman-3-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/woman-3.jpg">
+                                <img src="assets/img/woman-3.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">COLLECTION</h1>
+                                <p class="colorChangedText">Discover this week the latest pieces from our latest collection<br> Spring Summer 2020 Woman <br> Selected pieces with new pictures curated for you.</p>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                    <div class="swiper-v-button-next">
+                        <div class="buttonContent clearfix"><img class="slideIcon" src="assets/img/down-bold-black.svg" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-slide" category="Kids">
+                <div class="swiper-container swiper-container-v">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" color="#000">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/baby-1-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/baby-1.jpg">
+                                <img src="assets/img/baby-1.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">JOIN LIFE</h1>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" color="#fff">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/baby-2-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/baby-2.jpg">
+                                <img src="assets/img/baby-2.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">STORIES</h1>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" color="#fff">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/baby-3-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/baby-3.jpg">
+                                <img src="assets/img/baby-3.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">SHOES & BAGS</h1>
+                                <p class="colorChangedText">Explore the new collection of Shoes & Bags <br> Spring Summer Man Collection</p>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" color="#fff">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/baby-4-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/baby-4.jpg">
+                                <img src="assets/img/baby-4.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">COLLECTION</h1>
+                                <p class="colorChangedText">Explore the new collection of Shoes & Bags <br> Spring Summer Man Collection</p>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" color="#000">
+                            <picture class="pictureWrapper">
+                                <source media="(orientation: portrait)" srcset="assets/img/baby-5-small.jpg">
+                                <source media="(orientation: landscape)" srcset="assets/img/baby-5.jpg">
+                                <img src="assets/img/baby-5.jpg" alt="">
+                            </picture>
+                            <div class="slideContent">
+                                <h1 class="colorChangedText">NEW IN BABY</h1>
+                                <p class="colorChangedText">Discover the latest dresses for baby with spring colors and new shapes</p>
+                                <a href="#" class="colorChangedText">VIEW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
+                    <div class="swiper-v-button-next">
+                        <div class="buttonContent clearfix"><img class="slideIcon" src="assets/img/down-bold-black.svg" alt=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-button-next">
+            <div class="buttonContent clearfix"><img class="slideIcon" src="assets/img/right-bold-black.svg" alt=""><span class="nextCategory colorChangedText"></span></div>
+        </div>
+        <div class="swiper-button-prev">
+            <div class="buttonContent clearfix"><span class="prevCategory colorChangedText"></span><img class="slideIcon" src="assets/img/left-bold-black.svg" alt=""></div>
+        </div>
+        <div class="swiper-pagination swiper-pagination-h">
+        </div>
+        <div class="swiper-next-section">
+            <img class="slideNextSectionIcon" src="assets/img/down-bold-black.svg" alt="">
+        </div>
+    </div>
+</section>
+<section class="pageContent">
+    <section id="newArriwals" class="newArrivalsCommon">
+        <div class="newArriwalsLine clearfix">
+            <span class="newArrivalBold">New Arrivals</span>
+            <span class="newArrivalLight">New Arrivals</span>
+        </div>
+    </section>
+    <section id="shop">
+        <div class="shopPart d-lg-flex">
+            <div class="partLeft order-lg-1">
+                <img src="assets/img/shopPart1.jpg" alt="">
+            </div>
+            <div class="partRight order-lg-2">
+                <h2>
+                    <span>Shop</span>
+                    <strong>T-shirts</strong>
+                </h2>
+                <a href="/products.html">Shop</a>
+            </div>
+        </div>
+        <div class="shopPart d-lg-flex">
+            <div class="partLeft order-lg-2">
+                <img src="assets/img/shopPart2.jpg" alt="">
+            </div>
+            <div class="partRight order-lg-1">
+                <h2>
+                    <span>Shop</span>
+                    <strong>HOMEWEAR</strong>
+                </h2>
+                <a href="/products.html">Shop</a>
+            </div>
+        </div>
+        <div class="shopPart d-lg-flex">
+            <div class="partLeft order-lg-1">
+                <img src="assets/img/shopPart3.jpg" alt="">
+            </div>
+            <div class="partRight order-lg-2">
+                <h2>
+                    <span>Shop</span>
+                    <strong>X P&B</strong>
+                </h2>
+                <a href="/products.html">Shop</a>
+            </div>
+        </div>
+    </section>
+    <!-- <section id="newArriwalsDown" class="newArrivalsCommon">
+
+        <div class="newArriwalsLine clearfix">
+            <span class="newArrivalBold">New Arrivals</span>
+            <span class="newArrivalLight">New Arrivals</span>
+        </div>
+    </section> -->
+    <section id="joinLife" class="d-flex align-items-center justify-content-center">
+        <div class="joinLifeContent">
+            <h1>Join life</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+                book.
+            </p>
+            <a href="#">Shop</a>
+        </div>
+        <div class="cover"></div>
+    </section>
+    <section id="newArrivalProducts">
+        <h2 class="sectionTitle">
+            <span>Recently</span> viewed products
+        </h2>
+        <div class="swiper-newArrivals">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-1.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productTitle" text="Voluminous textured panel dress"></h3>
+                            <p class="priceInfo">
+                                <span class="salePrice">29.00 AZN</span>
+                                <span class="price">45.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">35%</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-2.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productTitle" text="Midi dress with ruffles and drawstring"></h3>
+                            <p class="priceInfo">
+                                <span class="price">45.00 AZN</span>
+                            </p>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-3.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productTitle" text="Panelled baby-doll dress with embroidery"></h3>
+                            <p class="priceInfo">
+                                <span class="salePrice">32.00 AZN</span>
+                                <span class="price">42.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">25%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-4.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productTitle" text="Mickey Mouse floral print T-shirt"></h3>
+                            <p class="priceInfo">
+                                <span class="salePrice">42.00 AZN</span>
+                                <span class="price">64.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">20%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-5.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productTitle" text="Faded sweatshirt with contrast print"></h3>
+                            <p class="priceInfo">
+                                <span class="price">54.00 AZN</span>
+                            </p>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-6.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productTitle" text="Midi dress with ruffles and drawstring"></h3>
+                            <p class="priceInfo">
+                                <span class="salePrice">30.00 AZN</span>
+                                <span class="price">33.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">10%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-7.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h3 class="productTitle" text="Faux leather dress with gathered shoulders"></h3>
+                            <p class="priceInfo">
+                                <span class="salePrice">32.00 AZN</span>
+                                <span class="price">42.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">25%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="newArrivals-next next-prev-buttons">
+                <img src="assets/img/right-white.svg" alt="">
+            </div>
+            <div class="newArrivals-prev next-prev-buttons">
+                <img src="assets/img/left-white.svg" alt="">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section id="subscribe">
+        <div class="top">
+            <img src="assets/img/newslater.jpg" alt="">
+        </div>
+        <div class="newsLetterForm">
+            <h2>Subscribe to our newsletter</h2>
+            <form action="" id="subscriptionForm">
+                <label for="email" id="forEmail">
+                    Enter email
+                </label>
+                <input type="email" name="email" id="email" autocomplete="off">
+                <div class="subscribeFocusContent">
+                    <div class="innerSubscribeFocusContent d-flex align-items-center justify-content-center">
+                        <div class="radioButton d-flex align-items-center justify-content-center">
+                            <span class="radioButtonEffect "></span>
+                            <input type="radio" id="male" name="gender" value="Man">
+                            <label for="male">Man</label><br>
+                        </div>
+                        <div class="radioButton d-flex align-items-center justify-content-center">
+                            <span class="radioButtonEffect"></span>
+                            <input type="radio" id="female" name="gender" value="Woman">
+                            <label for="female">Woman</label><br>
+                        </div>
+
+                    </div>
+                    <button type="submit">Subscribe</button>
+                    <a href="#" class="wantUnsubscribe">I want to unsubscribe</a>
+                </div>
+                <div class="unSubscribeFocusContent ">
+                    <button type="submit">I want to unsubscribe</button>
+                    <a href="#" class="wantSubscribe">Subscribe</a>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section id="footer">
+        <ul class="d-lg-flex align-items-lg-start justify-content-lg-center accordion-content">
+            <li class="accordion">
+                <h3 class="d-flex align-items-center justify-content-between">Services <img src="assets/img/down-bold-black.svg" alt=""></h3>
+                <div class="subAccordionContent">
+                    <ul>
+                        <li class="d-flex align-items-center">
+                            <a href="#">Affinity card
+                                <span class="underLine"></span>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="#">Gift card
+                                <span class="underLine"></span>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="#">Clothing care
+                                <span class="underLine"></span>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="#">Shoe care
+                                <span class="underLine"></span>
+                            </a>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <a href="#">Discover our app
+                                <span class="underLine"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="accordion">
+                <h3 class="d-flex align-items-center justify-content-between">Company <img src="assets/img/down-bold-black.svg" alt=""></h3>
+                <div class="subAccordionContent">
+                    <ul>
+                        <li>
+                            <a href="#">About us
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">Offices
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">Stores
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">Store locator
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">Work with us
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">PRivacy policy
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">Special store openning hours
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">Cookie policy
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="#">Terms of use
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+
+                    </ul>
+                </div>
+
+            </li>
+            <li class="accordion">
+                <h3 class="d-flex align-items-center justify-content-between">Social <img src="assets/img/down-bold-black.svg" alt=""></h3>
+                <div class="subAccordionContent">
+                    <ul>
+                        <li>
+
+                            <a href="#">
+                                <img src="assets/img/facebook.svg" alt=""> Facebook
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <img src="assets/img/twitter.svg" alt=""> Twitter
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <img src="assets/img/pinterest.svg" alt=""> Pinterest
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <img src="assets/img/instagram.svg" alt=""> Instagram
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                        <li>
+
+                            <a href="#">
+                                <img src="assets/img/youtube.svg" alt=""> Youtube
+                                <span class="underLine"></span>
+                            </a>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </li>
+        </ul>
+
+    </section>
+</section>
+
+<section id="searchPage">
+    <div class="searchPageContent">
+        <div class="top d-flex justify-content-between align-items-center">
+            <div class="search d-flex  align-items-center">
+                <img src="assets/img/search-light.svg" id="searchInputRef" alt="">
+                <input type="text" name="searchInput" id="searchInput" placeholder="Find a product" class="searchInput">
+            </div>
+            <div class="closeSearch">
+                <img src="assets/img/close-menu.svg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        var IconsColorAndImageRelation = [{
+            color: "#000",
+            leftArrowSrc: "assets/img/left-bold-black.svg",
+            rightArrowSrc: "assets/img/right-bold-black.svg",
+            downArrowSrc: "assets/img/down-bold-black.svg",
+            menuIcon: "assets/img/menu-black.svg",
+            searchIcon: "assets/img/search-bold-black.svg",
+            signinIcon: "assets/img/signin-bold-black.svg",
+            favoritesIcon: "assets/img/heart-bold-black.svg",
+            chartIcon: "assets/img/bag-bold-black.svg",
+            searchMinIcon: "assets/img/search-black.svg"
+        }, {
+            color: "#fff",
+            leftArrowSrc: "assets/img/left-bold-white.svg",
+            rightArrowSrc: "assets/img/right-bold-white.svg",
+            downArrowSrc: "assets/img/down-bold-white.svg",
+            menuIcon: "assets/img/menu-white.svg",
+            searchIcon: "assets/img/search-bold-white.svg",
+            signinIcon: "assets/img/signin-bold-white.svg",
+            favoritesIcon: "assets/img/heart-bold-white.svg",
+            chartIcon: "assets/img/bag-bold-white.svg",
+            searchMinIcon: "assets/img/search-white.svg"
+        }]
+
+        var slideCategories = ["Men", "Women", "Kids"];
+        var newArrivals = [{
+            "boldTextElement": '<span class="newArrivalBold">New Arrivals</span>',
+            "lightTextElement": '<span class="newArrivalLight">New Arrivals</span>',
+            "boldElementClass": ".newArrivalBold",
+            "lightElementClass": ".newArrivalLight",
+            'newArrivalSectionId': "#newArriwals",
+            'newArrivalSectionLine': ".newArriwalsLine",
+            'LEFTPOSNEWARRIVAL': 0,
+            'LEFTPOSITIONOFTEXT': 0,
+            'WIDTHOFTEXTELEMENT': 125
+
+        }, {
+            "boldTextElement": '<span class="newArrivalBold">New Arrivals</span>',
+            "lightTextElement": '<span class="newArrivalLight">New Arrivals</span>',
+            "boldElementClass": ".newArrivalBold",
+            "lightElementClass": ".newArrivalLight",
+            'newArrivalSectionId': "#newArriwalsDown",
+            'newArrivalSectionLine': ".newArriwalsLine",
+            'LEFTPOSNEWARRIVAL': 0,
+            'LEFTPOSITIONOFTEXT': 0,
+            'WIDTHOFTEXTELEMENT': 125
+        }];
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="assets/js/scripts.min.js"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="js/scripts.js"></script>
+
     <!-- <script src="js/scripts.js"></script> -->
 </body>
 

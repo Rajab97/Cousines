@@ -1,0 +1,46 @@
+@media (max-width: $mobilePhones) {}
+
+@media (min-width: $mobilePhones) {}
+
+@media (min-width: $tablets) {
+    #joinLife {
+        .joinLifeContent {
+            width: 70%;
+            text-align: center;
+            h1 {
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 25px;
+            }
+            a {
+                text-transform: uppercase;
+                padding: 10px 0;
+                width: 150px;
+            }
+        }
+    }
+}
+
+@media (min-width: $laptops) {
+    #joinLife {
+        background-attachment: initial;
+        .joinLifeContent {
+            width: 60%;
+            text-align: center;
+            h1 {
+                margin-bottom: 15px;
+            }
+            p {
+                margin-bottom: 25px;
+            }
+            a {
+                text-transform: uppercase;
+                padding: 10px 0;
+                width: 175px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktops) {}

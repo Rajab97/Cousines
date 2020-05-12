@@ -1,0 +1,118 @@
+@media (max-width: $mobilePhones) {
+    #slider {
+        .swiper-pagination-h {
+            display: initial;
+        }
+        .swiper-button-next {
+            display: none;
+        }
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+    .swiper-container-v {
+        .swiper-pagination-v {
+            position: absolute;
+            bottom: 50%;
+            right: 40px;
+            transform: translate(-50%, -50%);
+        }
+        .swiper-v-button-next {
+            display: none;
+        }
+        // .swiper-v-button-next {
+        //     bottom: 13%;
+        // }
+    }
+}
+
+@media (min-width: $mobilePhones) {
+    #slider {
+        .swiper-pagination-h {
+            display: initial;
+        }
+        .swiper-button-next {
+            display: none;
+        }
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+    .swiper-container-v {
+        .swiper-pagination-v {
+            position: absolute;
+            bottom: 50%;
+            right: 40px;
+            transform: translate(-50%, -50%);
+        }
+        .swiper-v-button-next {
+            display: none;
+        }
+        // .swiper-v-button-next {
+        //     bottom: 13%;
+        //     transform: translate(-50%);
+        // }
+    }
+}
+
+@media (min-width: $tablets) {
+    .swiper-container-v {
+        .swiper-pagination-v {
+            position: absolute;
+            bottom: 50%;
+            right: 40px;
+            transform: translate(-50%, -50%);
+        }
+        // .swiper-v-button-next {
+        //     bottom: 14%;
+        //     transform: translate(-50%);
+        // }
+    }
+}
+
+@media (min-width: $laptops) {
+    #slider {
+        .swiper-pagination-h {
+            display: none;
+        }
+        .swiper-button-next {
+            display: initial;
+        }
+        .swiper-button-prev {
+            display: initial;
+        }
+        .swiper-next-section {
+            display: none;
+        }
+        .swiper-container-v {
+            .swiper-pagination-v {
+                top: auto;
+                bottom: 10px;
+                right: 40px;
+                transform: translate3d(0, -50%, 0);
+            }
+            .swiper-v-button-next {
+                display: block;
+            }
+            // .swiper-v-button-next {
+            //     bottom: 40px;
+            //     transform: translate(0%);
+            // }
+        }
+    }
+}
+
+@media (min-width: $desktops) {
+    .swiper-container-v {
+        .swiper-pagination-v {
+            top: auto;
+            bottom: 10px;
+            right: 40px;
+            transform: translate3d(0, -50%, 0);
+        }
+        // .swiper-v-button-next {
+        //     bottom: 40px;
+        //     transform: translate(0);
+        // }
+    }
+}

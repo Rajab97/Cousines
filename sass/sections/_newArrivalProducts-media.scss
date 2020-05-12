@@ -1,0 +1,126 @@
+@media (max-width: $mobilePhones) {
+    #newArrivalProducts {
+        .swiper-newArrivals {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .imgSection {
+                        img {}
+                    }
+                    .productInfo {
+                        .productTitle {
+                            text-align: center;
+                        }
+                        .priceInfo {
+                            text-align: center;
+                            .salePrice {}
+                            .price {}
+                        }
+                        .saleInfo {
+                            display: block;
+                            .sale {}
+                        }
+                    }
+                }
+            }
+            .next-prev-buttons {
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media (min-width: $mobilePhones) {
+    #newArrivalProducts {
+        .swiper-newArrivals {
+            .swiper-wrapper {
+                .swiper-slide {
+                    .imgSection {
+                        img {}
+                    }
+                    .productInfo {
+                        .productTitle {
+                            text-align: center;
+                        }
+                        .priceInfo {
+                            text-align: center;
+                            .salePrice {}
+                            .price {}
+                        }
+                        .saleInfo {
+                            display: block;
+                            .sale {}
+                        }
+                    }
+                }
+            }
+            .next-prev-buttons {
+                width: 75px;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablets) {
+    @media (min-width: $laptops) {
+        #newArrivalProducts {
+            .swiper-newArrivals {
+                .swiper-wrapper {
+                    padding-bottom: 25px;
+                    .swiper-slide {
+                        .imgSection {
+                            img {}
+                        }
+                        .productInfo {
+                            .productTitle {
+                                text-align: center;
+                            }
+                            .priceInfo {
+                                text-align: center;
+                                .salePrice {}
+                                .price {}
+                            }
+                            .saleInfo {
+                                display: block;
+                                .sale {}
+                            }
+                        }
+                    }
+                }
+                .next-prev-buttons {
+                    width: 75px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $laptops) {
+    #newArrivalProducts {
+        .swiper-newArrivals {
+            .swiper-wrapper {
+                padding-bottom: 30px;
+                .swiper-slide {
+                    .imgSection {
+                        img {}
+                    }
+                    .productInfo {
+                        .productTitle {}
+                        .priceInfo {
+                            .salePrice {}
+                            .price {}
+                        }
+                        .saleInfo {
+                            display: block;
+                            .sale {}
+                        }
+                    }
+                }
+            }
+            .next-prev-buttons {
+                width: 100px;
+            }
+        }
+    }
+}
+
+@media (min-width: $desktops) {}
