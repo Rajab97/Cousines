@@ -16,16 +16,20 @@
                     }
                 }
                 .productInfo {
-                    .productTitle {
-                        @include font-size($mobilePhones, $desktopsLarge, 14px, 22px);
-                        color: $textColor;
+                    h4 {
+                        height: 30px;
+                        text-align: center;
+                        @include font-size($mobilePhones, $desktopsLarge, 12px, 14px);
                         font-weight: 300;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.33;
+                        letter-spacing: 0.7px;
+                        color: #313131;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
                         padding: 10px 0px;
-                        padding-bottom: 0px;
-                        text-align: left;
-                        margin-bottom: 5px;
-                        height: 20x;
-                        line-height: 20px;
                     }
                     .priceInfo {
                         text-align: left;

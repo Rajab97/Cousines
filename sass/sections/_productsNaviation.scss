@@ -59,5 +59,14 @@
             color: $textColorWhite;
             @include font-size($mobilePhones, $desktopsLarge, 12px, 20px);
         }
+        .seeColumnButton {
+            padding: 10px 30px;
+            border-radius: 25px;
+            border: 1px solid #292929;
+            background-color: #fff;
+            color: #292929;
+            margin-right: 5px;
+            @include font-size($mobilePhones, $desktopsLarge, 12px, 20px);
+        }
     }
 }

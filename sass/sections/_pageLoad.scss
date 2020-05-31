@@ -1,0 +1,209 @@
+#pageLoad {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(80deg, #110e1f, #1b1730);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999999;
+    box-sizing: border-box;
+    overflow: hidden;
+    .text {
+        width: 75%;
+        height: 300px;
+        // font-family: 'Fredericka the Great', cursive;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        box-sizing: border-box;
+        font-family: 'GlossAndBloom', 'Cabin Sketch', cursive;
+        transform: translate(-50%, -50%);
+        overflow: hidden;
+        span {
+            display: inline-block;
+            width: 100%;
+            height: 300px;
+            background-image: url('../img/page-load-1.png');
+            background-size: 100% 100%;
+            background-position: center;
+            box-sizing: border-box;
+            overflow: hidden;
+            font-size: 80px;
+            text-align: center;
+            line-height: 300px;
+            animation: pageLoadTextAnim 1s infinite, pageLoadTextAnimColor 6s forwards;
+            -webkit-background-clip: text;
+            font-family: 'GlossAndBloom', 'Cabin Sketch', cursive;
+            transform: rotate(-5deg);
+            pointer-events: none;
+            color: lighten(#d2006b, 50%);
+            animation-delay: 0s;
+        }
+    }
+    .title {
+        font-family: monospace;
+        font-size: 12px;
+        color: #fff;
+        letter-spacing: 5px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        word-wrap: none;
+    }
+    .bar {
+        width: 120px;
+        height: 2px;
+        background-color: #282246;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        #fill {
+            width: 0%;
+            height: 100%;
+            max-width: 120px;
+            background-color: #fff;
+            position: relative;
+            top: 0px;
+            left: 0px;
+        }
+    }
+}
+
+@media (max-width: $mobilePhones) {
+    #pageLoad {
+        .text {
+            // font-family: 'Fredericka the Great', cursive;
+            span {
+                font-size: 50px;
+            }
+        }
+        .title {
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+        .bar {
+            height: 2px;
+            top: 65%;
+        }
+    }
+}
+
+@media (min-width: $mobilePhones) {
+    #pageLoad {
+        .text {
+            span {
+                font-size: 60px;
+            }
+            // font-family: 'Fredericka the Great', cursive;
+        }
+    }
+}
+
+@media (min-width: $tablets) {
+    #pageLoad {
+        .text {
+            span {
+                font-size: 60px;
+            }
+            // font-family: 'Fredericka the Great', cursive;
+        }
+    }
+}
+
+@media (min-width: $laptops) {
+    #pageLoad {
+        .text {
+            span {
+                font-size: 80px;
+            }
+            // font-family: 'Fredericka the Great', cursive;
+        }
+        .title {
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+        .bar {
+            height: 2px;
+            top: 64.5%;
+        }
+    }
+}
+
+@media (min-width: $desktops) {
+    #pageLoad {
+        .text {
+            span {
+                font-size: 80px;
+            }
+            // font-family: 'Fredericka the Great', cursive;
+        }
+        .title {
+            font-size: 18px;
+            letter-spacing: 5px;
+        }
+        .bar {
+            height: 2px;
+            top: 64.5%;
+        }
+    }
+}
+
+@media (min-width: $desktopsLarge) {
+    #pageLoad {
+        .text {
+            span {
+                font-size: 100px;
+            }
+            // font-family: 'Fredericka the Great', cursive;
+        }
+    }
+}
+
+@keyframes pageLoadTextAnimColor {
+    from {
+        color: #d2006b;
+    }
+    to {
+        color: transparent;
+    }
+}
+
+@keyframes pageLoadTextAnim {
+    0% {
+        background-image: url('../img/page-load-1.png');
+    }
+    10% {
+        background-image: url('../img/page-load-2.png');
+    }
+    20% {
+        background-image: url('../img/page-load-3.png');
+    }
+    30% {
+        background-image: url('../img/page-load-4.png');
+    }
+    40% {
+        background-image: url('../img/page-load-5.png');
+    }
+    50% {
+        background-image: url('../img/page-load-6.png');
+    }
+    60% {
+        background-image: url('../img/page-load-7.png');
+    }
+    70% {
+        background-image: url('../img/page-load-8.png');
+    }
+    80% {
+        background-image: url('../img/page-load-9.png');
+    }
+    90% {
+        background-image: url('../img/page-load-10.png');
+    }
+    100% {
+        background-image: url('../img/page-load-11.png');
+    }
+}

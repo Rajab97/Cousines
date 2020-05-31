@@ -33,6 +33,8 @@
                 h1 {
                     text-align: center;
                     font-size: 33px;
+                    padding: 8px 0px;
+                    font-family: 'GlossAndBloom', 'Cabin Sketch', cursive;
                 }
             }
             .right {
@@ -107,6 +109,8 @@
                 h1 {
                     text-align: center;
                     font-size: 33px;
+                    padding: 8px 0px;
+                    font-family: 'GlossAndBloom', 'Cabin Sketch', cursive;
                 }
             }
             .right {
@@ -172,10 +176,11 @@
                 width: 33.33%;
                 position: initial;
                 transform: translate(0);
+                font-family: 'GlossAndBloom', 'Cabin Sketch', cursive;
                 h1 {
                     text-align: center;
                     font-weight: bold;
-                    font-size: 37px;
+                    font-size: 40px;
                 }
             }
             .right {
@@ -230,7 +235,13 @@
                 ul {
                     li {
                         a {
-                            img {}
+                            img {
+                                width: 27px;
+                                height: 27px;
+                            }
+                        }
+                        &.exPage {
+                            display: none;
                         }
                     }
                     li:last-child {
@@ -238,14 +249,24 @@
                     }
                 }
             }
-            .center {}
+            .center {
+                h1 {
+                    font-size: 50px;
+                }
+            }
             .right {
                 display: block;
                 ul {
                     li {
                         a {
-                            img {}
+                            img {
+                                width: 27px;
+                                height: 27px;
+                            }
                         }
+                    }
+                    li.line {
+                        height: 20px;
                     }
                 }
             }
@@ -256,4 +277,49 @@
     }
 }
 
-@media (min-width: $desktops) {}
+@media (min-width: $desktops) {
+    #nav-bar {
+        background: transparent;
+        .row {
+            .left {
+                ul {
+                    li {
+                        a {
+                            img {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                    li:last-child {
+                        margin-left: 0px;
+                    }
+                }
+            }
+            .center {
+                h1 {
+                    font-size: 60px;
+                }
+            }
+            .right {
+                display: block;
+                ul {
+                    li {
+                        a {
+                            img {
+                                width: 30px;
+                                height: 30px;
+                            }
+                        }
+                    }
+                    li.line {
+                        height: 21px;
+                    }
+                }
+            }
+            .navMinSearch {
+                display: none;
+            }
+        }
+    }
+}

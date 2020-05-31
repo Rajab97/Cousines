@@ -1,6 +1,5 @@
 body {
     background: #fff;
-    font-family: 'FontName', Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -86,6 +85,11 @@ input:focus {
 @font-face {
     font-family: "open-sans";
     src: url(../fonts/OpenSans-Bold.ttf), url(../fonts/OpenSans-BoldItalic.ttf), url(../fonts/OpenSans-ExtraBold.ttf), url(../fonts/OpenSans-ExtraBoldItalic.ttf), url(../fonts/OpenSans-Light.ttf), url(../fonts/OpenSans-LightItalic.ttf), url(../fonts/OpenSans-Regualar.ttf), url(../fonts/OpenSans-SemiBold.ttf), url(../fonts/OpenSans-SemiBoldItalic.ttf), ;
+}
+
+@font-face {
+    font-family: GlossAndBloom;
+    src: url('../fonts/Gloss_And_Bloom.ttf') format('truetype');
 }
 
 .customScroll::-webkit-scrollbar {

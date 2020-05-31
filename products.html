@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&family=Fredericka+the+Great&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="plugins/swiper/swiper.min.css">
     <link rel="stylesheet" href="plugins/range/ion.rangeSlider.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
+
 </head>
+
 <style>
     @media (max-width: 425px) {
         #joinLife {
@@ -37,151 +40,81 @@
         }
     }
 </style>
-<nav id="nav-bar" class="container-fluid">
-    <div class="row">
-        <div class="left">
-            <ul class="clearfix">
-                <li>
-                    <a href="#">
-                        <img class="menuIcon" src="" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="openSearchCommand">
-                        <img class="searchIcon" src="" alt="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="center">
-            <h1 class="colorChangedText logoTitle">Cousines</h1>
-        </div>
-        <div class="right clearfix">
-            <ul class="clearfix">
-                <li>
-                    <a href="#"><img class="signinIcon" src="" alt=""></a>
-                </li>
-                <li class="line"></li>
-                <li>
-                    <a href="#"><img class="favoritesIcon" src="" alt=""></a>
-                </li>
-                <li class="line"></li>
-                <li>
-                    <a class="chart" href="#"><img class="chartIcon" src="" alt=""></a>
-                </li>
-            </ul>
-        </div>
-        <div class="navMinSearch ">
-            <div class="outlineSearch openSearchCommand colorChangedText">
-                <img src="" class="searchMinIcon" alt="">
-                <span class="colorChangedText">Search</span>
-            </div>
-        </div>
-    </div>
-</nav>
-<section id="navTopHeight" style="width: 100%;"></section>
-<section id="menu">
-    <div class="breadcrump d-flex justify-content-between align-items-center">
-        <span class="breadcrumpTitle">Home</span>
-        <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-    </div>
-    <div class="content baseContent customScroll" menuPath="Home">
-        <div class="categories">
-            <ul class="baseCategories">
-                <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men">
-                    <span class="categoryName">Men</span>
-                    <img class="subcategory" src="assets/img/right.svg">
-                </li>
-                <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women">
-                    <span class="categoryName">Women</span>
-                    <img class="subcategory" src="assets/img/right.svg">
-                </li>
-                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
-                    <span class="categoryName">Kids</span>
-                    <img class="subcategory" src="assets/img/right.svg">
-                </li>
-                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
-                    <span class="categoryName">Sale</span>
-                </li>
-                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
-                    <span class="categoryName">Accessories</span>
-                    <img class="subcategory" src="assets/img/right.svg">
-                </li>
-                <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
-                    <span class="categoryName">Shoes</span>
-                    <img class="subcategory" src="assets/img/right.svg">
-                </li>
-            </ul>
-        </div>
-        <div class="shopByThemeMobile">
-            <h3>Shop by theme Mobile</h3>
-            <div class="shopByThemeElements">
+
+<body style="overflow: hidden;">
+
+    <nav id="nav-bar" class="container-fluid">
+        <div class="row">
+            <div class="left">
                 <ul class="clearfix">
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Live</a></li>
-                    <li><a href="#">Men's New Arrivals</a></li>
                     <li>
-                        <a href="#"> Women's New Arrivals</a>
+                        <a href="#">
+                            <img class="menuIcon" src="" alt="">
+                        </a>
                     </li>
                     <li>
-                        <a href="#"> Kids' New Arrivals</a>
+                        <a href="#" class="openSearchCommand">
+                            <img class="searchIcon" src="" alt="">
+                        </a>
                     </li>
                 </ul>
             </div>
-        </div>
-
-        <div class="shopByThemeLaptop">
-            <h3>Shop by theme Laptop</h3>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">Sport</div>
-                <div class="swiper-slide">Live</div>
-                <div class="swiper-slide">Men's New Arrivals</div>
-                <div class="swiper-slide">Women's New Arrivals</div>
-                <div class="swiper-slide">Kids' New Arrivals</div>
+            <div class="center">
+                <h1 class="colorChangedText logoTitle">Cousines</h1>
             </div>
-            <!-- Add Scrollbar -->
-            <div class="swiper-scrollbar"></div>
+            <div class="right clearfix">
+                <ul class="clearfix">
+                    <li>
+                        <a href="#"><img class="signinIcon" src="" alt=""></a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#"><img class="favoritesIcon" src="" alt=""></a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a class="chart" href="#"><img class="chartIcon" src="" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navMinSearch ">
+                <div class="outlineSearch openSearchCommand colorChangedText">
+                    <img src="" class="searchMinIcon" alt="">
+                    <span class="colorChangedText">Search</span>
+                </div>
+            </div>
         </div>
-        <div class="pages">
-            <ul>
-                <li>
-                    <a href="#"><img src="assets/img/signin-black.svg" alt=""><span>Log in</span></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/img/heart-black.svg" alt=""><span>Favorites</span></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/img/bag-black.svg" alt=""><span>Chart</span></a>
-                </li>
-                <li>
-                    <a href="#"><img src="assets/img/help.svg" alt=""><span>Help & Support</span></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="subContent " menuPath="Home/Men">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center"><span class="menuBreadcrumpNav" pathTo="Home">Home</span>/<span>Men</span></p>
+    </nav>
+    <section id="navTopHeight" style="width: 100%;"></section>
+    <section id="menu">
+        <div class="breadcrump d-flex justify-content-between align-items-center">
+            <span class="breadcrumpTitle">Home</span>
             <img src="assets/img/close-menu.svg" class="menuClose" alt="">
         </div>
-        <div class="content customScroll">
+        <div class="content baseContent customScroll" menuPath="Home">
             <div class="categories">
                 <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Clothing">
-                        <span class="categoryName">Clothing</span>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men">
+                        <span class="categoryName">Men</span>
                         <img class="subcategory" src="assets/img/right.svg">
                     </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Shoes">
-                        <span class="categoryName">Shoes</span>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women">
+                        <span class="categoryName">Women</span>
                         <img class="subcategory" src="assets/img/right.svg">
                     </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Accessories">
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
+                        <span class="categoryName">Kids</span>
+                        <img class="subcategory" src="assets/img/right.svg">
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
+                        <span class="categoryName">Sale</span>
+                    </li>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
                         <span class="categoryName">Accessories</span>
                         <img class="subcategory" src="assets/img/right.svg">
                     </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/LeatherGoods">
-                        <span class="categoryName">Leather goods</span>
+                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav">
+                        <span class="categoryName">Shoes</span>
                         <img class="subcategory" src="assets/img/right.svg">
                     </li>
                 </ul>
@@ -192,837 +125,1625 @@
                     <ul class="clearfix">
                         <li><a href="#">Sport</a></li>
                         <li><a href="#">Live</a></li>
-                        <li><a href="#">Novak</a></li>
-                        <li><a href="#">Show</a></li>
-                        <li><a href="#">New</a></li>
+                        <li><a href="#">Men's New Arrivals</a></li>
+                        <li>
+                            <a href="#"> Women's New Arrivals</a>
+                        </li>
+                        <li>
+                            <a href="#"> Kids' New Arrivals</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class=" subContent " menuPath="Home/Men/Shoes">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
-                <span>Shoes</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Men's Shoes</span>
+
+            <div class="shopByThemeLaptop">
+                <h3>Shop by theme Laptop</h3>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Sport</div>
+                    <div class="swiper-slide">Live</div>
+                    <div class="swiper-slide">Men's New Arrivals</div>
+                    <div class="swiper-slide">Women's New Arrivals</div>
+                    <div class="swiper-slide">Kids' New Arrivals</div>
+                </div>
+                <!-- Add Scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="pages">
+                <ul>
+                    <li>
+                        <a href="#"><img src="assets/img/signin-black.svg" alt=""><span>Log in</span></a>
                     </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                    <li>
+                        <a href="#"><img src="assets/img/heart-black.svg" alt=""><span>Favorites</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/bag-black.svg" alt=""><span>Chart</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/img/help.svg" alt=""><span>Help & Support</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="subContent " menuPath="Home/Men">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center"><span class="menuBreadcrumpNav" pathTo="Home">Home</span>/<span>Men</span></p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Clothing">
+                            <span class="categoryName">Clothing</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Shoes">
+                            <span class="categoryName">Shoes</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/Accessories">
+                            <span class="categoryName">Accessories</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Men/LeatherGoods">
+                            <span class="categoryName">Leather goods</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Live</a></li>
+                            <li><a href="#">Novak</a></li>
+                            <li><a href="#">Show</a></li>
+                            <li><a href="#">New</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" subContent " menuPath="Home/Men/Shoes">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                    <span>Shoes</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Men's Shoes</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         New Arrivals</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sneakers</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sandals & Slip-Ons</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
+                        </li>
                     </ul>
                 </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+
+
         </div>
-
-
-
-    </div>
-    <div class=" subContent " menuPath="Home/Men/Clothing">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
-                <span>Clothing</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Men's Clothing</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+        <div class=" subContent " menuPath="Home/Men/Clothing">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                    <span>Clothing</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Men's Clothing</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 Best Sellers</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 The Original Polo</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 Polos</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         T-Shirts</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sweaters</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sweatshirts</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Button Down Shirts</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
-                        <li><a href="#">All seasons</a></li>
+                        </li>
                     </ul>
                 </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                            <li><a href="#">All seasons</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+
+
         </div>
-
-
-
-    </div>
-    <div class=" subContent " menuPath="Home/Men/Accessories">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
-                <span>Accessories</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Men's Accessories</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+        <div class=" subContent " menuPath="Home/Men/Accessories">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                    <span>Accessories</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Men's Accessories</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 
                         Watches</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 
                         Sunglasses</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 
                         Fragrance</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Caps & Hats</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Scarves & Gloves</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Socks</span>
-                    </li>
+                        </li>
 
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
-                        <li><a href="#">All seasons</a></li>
                     </ul>
                 </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                            <li><a href="#">All seasons</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+
+
         </div>
-
-
-
-    </div>
-    <div class=" subContent " menuPath="Home/Men/LeatherGoods">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
-                <span>Leather goods</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Men's Leather goods</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+        <div class=" subContent " menuPath="Home/Men/LeatherGoods">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Men">Men</span>/
+                    <span>Leather goods</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Men's Leather goods</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Bags</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         New arrivals</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Small Leather Goods</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 
                         Belts</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
-                        <li><a href="#">All seasons</a></li>
+                        </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-
-
-
-    </div>
-    <div class=" subContent " menuPath="Home/Women">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center"><span class="menuBreadcrumpNav" pathTo="Home">Home</span>/<span>Women</span></p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Clothing">
-                        <span class="categoryName">Clothing</span>
-                        <img class="subcategory" src="assets/img/right.svg">
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Shoes">
-                        <span class="categoryName">Shoes</span>
-                        <img class="subcategory" src="assets/img/right.svg">
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Accessories">
-                        <span class="categoryName">Accessories</span>
-                        <img class="subcategory" src="assets/img/right.svg">
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/LeatherGoods">
-                        <span class="categoryName">Leather goods</span>
-                        <img class="subcategory" src="assets/img/right.svg">
-                    </li>
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Sport</a></li>
-                        <li><a href="#">Live</a></li>
-                        <li><a href="#">Novak</a></li>
-                        <li><a href="#">Show</a></li>
-                        <li><a href="#">New</a></li>
-                    </ul>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                            <li><a href="#">All seasons</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
+
+
+
         </div>
+        <div class=" subContent " menuPath="Home/Women">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center"><span class="menuBreadcrumpNav" pathTo="Home">Home</span>/<span>Women</span></p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Clothing">
+                            <span class="categoryName">Clothing</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Shoes">
+                            <span class="categoryName">Shoes</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/Accessories">
+                            <span class="categoryName">Accessories</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory menuNav" pathTo="Home/Women/LeatherGoods">
+                            <span class="categoryName">Leather goods</span>
+                            <img class="subcategory" src="assets/img/right.svg">
+                        </li>
+                    </ul>
+                </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Sport</a></li>
+                            <li><a href="#">Live</a></li>
+                            <li><a href="#">Novak</a></li>
+                            <li><a href="#">Show</a></li>
+                            <li><a href="#">New</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
 
 
-    </div>
-    <div class=" subContent " menuPath="Home/Women/Shoes">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
-                <span>Shoes</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
         </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Women's Shoes</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+        <div class=" subContent " menuPath="Home/Women/Shoes">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                    <span>Shoes</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Women's Shoes</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         New Arrivals</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sneakers</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sandals & Slip-Ons</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
+                        </li>
                     </ul>
                 </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+
+
         </div>
-
-
-
-    </div>
-    <div class=" subContent " menuPath="Home/Women/Clothing">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
-                <span>Clothing</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Women's Clothing</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+        <div class=" subContent " menuPath="Home/Women/Clothing">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                    <span>Clothing</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Women's Clothing</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 Best Sellers</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 The Original Polo</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 Polos</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         T-Shirts</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sweaters</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Sweatshirts</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         Button Down Shirts</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
-                        <li><a href="#">All seasons</a></li>
+                        </li>
                     </ul>
                 </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                            <li><a href="#">All seasons</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+
+
         </div>
-
-
-
-    </div>
-    <div class=" subContent " menuPath="Home/Women/Accessories">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
-                <span>Accessories</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Women's Accessories</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+        <div class=" subContent " menuPath="Home/Women/Accessories">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                    <span>Accessories</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Women's Accessories</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 
                         Watches</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 
                         Sunglasses</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
 
                         Fragrance</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Caps & Hats</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Scarves & Gloves</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                         
 Socks</span>
-                    </li>
+                        </li>
 
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
-                        <li><a href="#">All seasons</a></li>
                     </ul>
                 </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                            <li><a href="#">All seasons</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+
+
+
         </div>
-
-
-
-    </div>
-    <div class=" subContent " menuPath="Home/Women/LeatherGoods">
-        <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
-            <img src="assets/img/back.svg" class="menuPrevious" alt="">
-            <p class="align-self-center">
-                <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
-                <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
-                <span>Leather goods</span>
-            </p>
-            <img src="assets/img/close-menu.svg" class="menuClose" alt="">
-        </div>
-        <div class="content customScroll">
-            <div class="categories">
-                <ul class="baseCategories">
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">See All Women's Leather goods</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+        <div class=" subContent " menuPath="Home/Women/LeatherGoods">
+            <div class="subContentBreadcrump d-flex justify-content-between align-items-center">
+                <img src="assets/img/back.svg" class="menuPrevious" alt="">
+                <p class="align-self-center">
+                    <span class="menuBreadcrumpNav" pathTo="Home">Home</span>/
+                    <span class="menuBreadcrumpNav" pathTo="Home/Women">Women</span>/
+                    <span>Leather goods</span>
+                </p>
+                <img src="assets/img/close-menu.svg" class="menuClose" alt="">
+            </div>
+            <div class="content customScroll">
+                <div class="categories">
+                    <ul class="baseCategories">
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">See All Women's Leather goods</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                             
     Bags</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                             New arrivals</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
                             
     Small Leather Goods</span>
-                    </li>
-                    <li class="d-flex justify-content-between align-items-center baseCategory">
-                        <span class="categoryName">
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center baseCategory">
+                            <span class="categoryName">
     
                             Belts</span>
-                    </li>
-                </ul>
-            </div>
-            <div class="shopByThemeMobile">
-                <h3>Shop by theme Mobile</h3>
-                <div class="shopByThemeElements">
-                    <ul class="clearfix">
-                        <li><a href="#">Live your life</a></li>
-                        <li><a href="#">Novak new times</a></li>
-                        <li><a href="#">Flouver forever</a></li>
-                        <li><a href="#">All seasons</a></li>
+                        </li>
                     </ul>
+                </div>
+                <div class="shopByThemeMobile">
+                    <h3>Shop by theme Mobile</h3>
+                    <div class="shopByThemeElements">
+                        <ul class="clearfix">
+                            <li><a href="#">Live your life</a></li>
+                            <li><a href="#">Novak new times</a></li>
+                            <li><a href="#">Flouver forever</a></li>
+                            <li><a href="#">All seasons</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+    <section id="searchPage">
+        <div class="searchPageContent">
+            <div class="top d-flex justify-content-between align-items-center">
+                <div class="search d-flex  align-items-center">
+                    <img src="assets/img/search-light.svg" id="searchInputRef" alt="">
+                    <input type="text" name="searchInput" id="searchInput" placeholder="Find a product" class="searchInput">
+                </div>
+                <div class="closeSearch">
+                    <img src="assets/img/close-menu.svg" alt="">
                 </div>
             </div>
         </div>
-
-
-
-    </div>
-</section>
-<section id="searchPage">
-    <div class="searchPageContent">
-        <div class="top d-flex justify-content-between align-items-center">
-            <div class="search d-flex  align-items-center">
-                <img src="assets/img/search-light.svg" id="searchInputRef" alt="">
-                <input type="text" name="searchInput" id="searchInput" placeholder="Find a product" class="searchInput">
+    </section>
+    <section id="productsNaviation" class="d-flex align-items-center justify-content-between flex-wrap flex-lg-nowrap">
+        <div class="breadcrump order-sm-1 order-1 order-md-1">
+            <ul class="d-flex align-items-center justify-content-start">
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+                <li class="space">/</li>
+                <li>
+                    <a href="/products.html">Woman</a>
+                </li>
+                <li class="space">/</li>
+                <li>
+                    <a href="#">Clothing</a>
+                </li>
+            </ul>
+            <p>120 results</p>
+        </div>
+        <div class="categories order-3 order-sm-3 order-md-2">
+            <ul class="d-flex align-items-center justify-content-center flex-wrap">
+                <li><a href="#" class="active productsSubCaterory">All</a></li>
+                <li><a href="#" class="productsSubCaterory">Jogging</a></li>
+                <li><a href="#" class="productsSubCaterory">Flared</a></li>
+                <li><a href="#" class="productsSubCaterory">Cotton</a></li>
+                <li><a href="#" class="productsSubCaterory">Cargo Trousers</a></li>
+            </ul>
+        </div>
+        <div class="filter d-flex align-items-center justify-content-end order-2 order-sm-2 order-md-3">
+            <a href="#" seeTwoColumn="See 2" seeFourColumn="See 4" class="seeColumnButton twoColumn d-flex align-items-center justify-content-between"><span>See 2</span></a>
+            <a href="#" class="filterButton d-flex align-items-center justify-content-between"><img src="assets/img/dotted-menu-white.svg" alt=""> <span>Sort and Filter</span></a>
+        </div>
+    </section>
+    <section id="allProducts" bcgColor="#000">
+        <div class="allProductsContent d-flex flex-wrap">
+            <div class="product item4 full" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="/productDetail.html" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-11.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-11.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/8/329/805/5238329805_4_1_8.jpg?t=1584470325731&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/329/805/529805_4_1_8.jpg?t=1584470325731&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-11.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-11.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/329/805/5238329805_2_2_8.jpg?t=1584470309307&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/329/805/5238329805_2_2_8.jpg?t=1584470309307&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #fff; color: #313131; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; letter-spacing: 2px; font-weight: 500; font-variant: small-caps; font-style: italic; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>30</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="productDetail.html">Ruffled fabric top with Swiss embroidery</a></h4>
+                        <span class="price">
+                    32.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 3 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:teal"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:white"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:brown"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="closeSearch">
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-12.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-12.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_4_1_8.jpg?t=1588885212288&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_4_1_8.jpg?t=1588885212288&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-12.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-12.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_2_2_8.jpg?t=1588885190660&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_2_2_8.jpg?t=1588885190660&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>32</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Ruffled fabric top with Swiss embroidery</a></h4>
+                        <span class="price">
+                    31.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 1 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:rebeccapurple"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:coral"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4 " href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-13.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-13.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_4_1_8.jpg?t=1588885246586&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_4_1_8.jpg?t=1588885246586&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-13.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-13.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_2_2_8.jpg?t=1588885222863&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_2_2_8.jpg?t=1588885222863&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>31</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Asymmetric smocked top</a></h4>
+                        <span class="price">
+                        56.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 3 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:black"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:white"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:fuchsia"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product item4 full" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-15.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-15.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_5_8.jpg?t=1585067212637&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_5_8.jpg?t=1585067212637&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-15.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-15.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_2_8.jpg?t=1585068205579&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_2_8.jpg?t=1585068205579&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>32</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>33</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Basic wide ribbed T-shirt</a></h4>
+                        <span class="price">
+                    62.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 4 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:navajowhite"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:mediumaquamarine"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:wheat"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:azure"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-5.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-5.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_4_1_8.jpg?t=1584001010122&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_4_1_8.jpg?t=1584001010122&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-5.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-5.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_2_2_8.jpg?t=1584000956530&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_2_2_8.jpg?t=1584000956530&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>32</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>33</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>34</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        54.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:red"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:teal"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4 " href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-16.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-16.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_4_1_8.jpg?t=1584974698999&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_4_1_8.jpg?t=1584974698999&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-16.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-16.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_2_2_8.jpg?t=1584974679449&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_2_2_8.jpg?t=1584974679449&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>31</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        57.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:bisque"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:navajowhite"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:azure"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4 full" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-1.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-1.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_4_1_8.jpg?t=1589210915516&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_4_1_8.jpg?t=1589210915516&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-1.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-1.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_2_2_8.jpg?t=1589210894006&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_2_2_8.jpg?t=1589210894006&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>31</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        51.99&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:black"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:yellow"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-2.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-2.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_4_1_8.jpg?t=1588879088867&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_4_1_8.jpg?t=1588879088867&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-2.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-2.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_2_2_8.jpg?t=1588879063306&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_2_2_8.jpg?t=1588879063306&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #fff; color: #313131; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; letter-spacing: 2px; font-weight: 500; font-variant: small-caps; font-style: italic; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>30</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                    55.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:wheat"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:azure"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-3.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-3.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_4_1_8.jpg?t=1583860246727&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_4_1_8.jpg?t=1583860246727&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-3.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-3.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_2_2_8.jpg?t=1583860195142&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_2_2_8.jpg?t=1583860195142&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>2</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        49.99&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:blueviolet"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:aqua"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4 full" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-4.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-4.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_4_1_8.jpg?t=1584001230216&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_4_1_8.jpg?t=1584001230216&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-4.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-4.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_2_2_8.jpg?t=1584001198065&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_2_2_8.jpg?t=1584001198065&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>32</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>33</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>34</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        54.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:red"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:teal"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <section id="productsFilter">
+        <div class="top clearfix d-flex">
+            <h3 class="d-flex align-items-center justify-content-center"><span>Filter</span></h3>
+            <div class="closeFilter d-flex align-items-center justify-content-center">
                 <img src="assets/img/close-menu.svg" alt="">
             </div>
         </div>
-    </div>
-</section>
-<section id="productsNaviation" class="d-flex align-items-center justify-content-between flex-wrap flex-lg-nowrap">
-    <div class="breadcrump order-sm-1 order-1 order-md-1">
-        <ul class="d-flex align-items-center justify-content-start">
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
-            <li class="space">/</li>
-            <li>
-                <a href="/products.html">Woman</a>
-            </li>
-            <li class="space">/</li>
-            <li>
-                <a href="#">Clothing</a>
-            </li>
-        </ul>
-        <p>120 results</p>
-    </div>
-    <div class="categories order-3 order-sm-3 order-md-2">
-        <ul class="d-flex align-items-center justify-content-center flex-wrap">
-            <li><a href="#" class="active productsSubCaterory">All</a></li>
-            <li><a href="#" class="productsSubCaterory">Jogging</a></li>
-            <li><a href="#" class="productsSubCaterory">Flared</a></li>
-            <li><a href="#" class="productsSubCaterory">Cotton</a></li>
-            <li><a href="#" class="productsSubCaterory">Cargo Trousers</a></li>
-        </ul>
-    </div>
-    <div class="filter d-flex align-items-center justify-content-end order-2 order-sm-2 order-md-3">
-        <a href="#" class="filterButton d-flex align-items-center justify-content-between"><img src="assets/img/dotted-menu-white.svg" alt=""> <span>Sort and Filter</span></a>
-    </div>
-</section>
-<section id="allProducts">
-    <div class="allProductsContent d-flex flex-wrap">
-        <div class="product item4">
-            <div class="imgContent">
-                <picture class="frontPicture">
-                    <source type="image/webp" srcset="assets/img/woman-trousers-1.webp" />
-                    <source type="image/jpg" srcset="assets/img/woman-trousers-1.jpg" />
-                    <img src="assets/img/woman-trousers-1.webp" alt="">
-                </picture>
-                <picture class="backPicture">
-                    <source type="image/webp" srcset="assets/img/woman-trousers-cover-1.webp" />
-                    <source type="image/jpg" srcset="assets/img/woman-trousers-cover-1.jpg" />
-                    <img src="assets/img/woman-trousers-cover-1.webp" alt="">
-                </picture>
-                <div class="favoritesButton">
-                    <img src="assets/img/heart-white.svg" alt="">
-                </div>
-            </div>
-            <div class="productInfo">
-                <h4>Linen trousers with elastic waistband</h4>
-                <span class="price">
-                    55.00&nbsp;AZN
-                  </span>
-                <div class="colors">
-                    <p>
-                        + 2 Colours
-                    </p>
-                    <ul class="d-flex justify-content-center align-items-center">
-                        <li class="colorContent d-flex justify-content-center align-items-center">
-                            <span class="color-box" style="background-color:blueviolet"></span>
-                        </li>
-                        <li class="colorContent d-flex justify-content-center align-items-center">
-                            <span class="color-box" style="background-color:aqua"></span>
-                        </li>
-                        <li class="colorContent d-flex justify-content-center align-items-center">
-                            <span class="color-box" style="background-color:chocolate"></span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="product item4">
-            <div class="imgContent"></div>
-            <div class="productInfo"></div>
-        </div>
-        <div class="product item4">
-            <div class="imgContent"></div>
-            <div class="productInfo"></div>
-        </div>
-        <div class="product item4">
-            <div class="imgContent"></div>
-            <div class="productInfo"></div>
-        </div>
-        <div class="product item4">
-            <div class="imgContent"></div>
-            <div class="productInfo"></div>
-        </div>
-    </div>
-</section>
-<section id="productsFilter">
-    <div class="top clearfix d-flex">
-        <h3 class="d-flex align-items-center justify-content-center"><span>Filter</span></h3>
-        <div class="closeFilter d-flex align-items-center justify-content-center">
-            <img src="assets/img/close-menu.svg" alt="">
-        </div>
-    </div>
-    <div class="productsFilter">
-        <div class="filterOpenedCategory calculatedWidth">
-            <h3 class="d-flex align-items-center justify-content-between"><span>Order by</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
-            <ul class="clearfix">
-                <li><a href="#">
+        <div class="productsFilter">
+            <div class="filterOpenedCategory calculatedWidth">
+                <h3 class="d-flex align-items-center justify-content-between"><span>Order by</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
+                <ul class="clearfix">
+                    <li><a href="#">
                     Priced from low to high</a></li>
-                <li><a href="#">
+                    <li><a href="#">
                     Priced from high to low</a></li>
-                <li><a href="#">
+                    <li><a href="#">
                     New arrivals</a></li>
-                <li><a href="#">
+                    <li><a href="#">
                     Promotions</a></li>
-            </ul>
-        </div>
-        <div class="filterOpenedCategory calculatedWidth">
-            <h3 class="d-flex align-items-center justify-content-between"><span>Product Type</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
-            <ul class="clearfix">
-                <li><a href="#">
+                </ul>
+            </div>
+            <div class="filterOpenedCategory calculatedWidth">
+                <h3 class="d-flex align-items-center justify-content-between"><span>Product Type</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
+                <ul class="clearfix">
+                    <li><a href="#">
                     Skirts</a></li>
-            </ul>
-        </div>
-        <div class="filterOpenedCategory calculatedWidth">
-            <h3 class="d-flex align-items-center justify-content-between"><span>Characteristic</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
-            <ul class="clearfix">
-                <li><a href="#">
+                </ul>
+            </div>
+            <div class="filterOpenedCategory calculatedWidth">
+                <h3 class="d-flex align-items-center justify-content-between"><span>Characteristic</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
+                <ul class="clearfix">
+                    <li><a href="#">
                     Frills</a></li>
-                <li><a href="#">Faux leather</a></li>
-                <li><a href="#">Flowers</a></li>
-                <li><a href="#">Mini</a></li>
-                <li><a href="#">Polka dots</a></li>
-                <li><a href="#">Checked</a></li>
-                <li><a href="#">Denim</a></li>
-            </ul>
-        </div>
-        <div class="filterOpenedCategory ColorFilter calculatedWidth">
-            <h3 class="d-flex align-items-center justify-content-between"><span>Characteristic</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
-            <ul class="clearfix">
-                <li><a href="#"><span colorCode="#ffffff"></span></a></li>
-                <li><a href="#"><span colorCode="#eb8634"></span></a></li>
-                <li><a href="#"><span colorCode="#e0d312"></span></a></li>
-                <li><a href="#"><span colorCode="#1f7a04"></span></a></li>
-                <li><a href="#"><span colorCode="#1b6282"></span></a></li>
-                <li><a href="#"><span colorCode="#716d91"></span></a></li>
-                <li><a href="#"><span colorCode="#6f3799"></span></a></li>
-                <li><a href="#"><span colorCode="#07000d"></span></a></li>
-            </ul>
-        </div>
-        <div class="filterOpenedCategory calculatedWidth">
-            <h3 class="d-flex align-items-center justify-content-between"><span>Size</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
-            <ul class="clearfix">
-                <li><a href="#">
+                    <li><a href="#">Faux leather</a></li>
+                    <li><a href="#">Flowers</a></li>
+                    <li><a href="#">Mini</a></li>
+                    <li><a href="#">Polka dots</a></li>
+                    <li><a href="#">Checked</a></li>
+                    <li><a href="#">Denim</a></li>
+                </ul>
+            </div>
+            <div class="filterOpenedCategory ColorFilter calculatedWidth">
+                <h3 class="d-flex align-items-center justify-content-between"><span>Characteristic</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
+                <ul class="clearfix">
+                    <li><a href="#"><span colorCode="#ffffff"></span></a></li>
+                    <li><a href="#"><span colorCode="#eb8634"></span></a></li>
+                    <li><a href="#"><span colorCode="#e0d312"></span></a></li>
+                    <li><a href="#"><span colorCode="#1f7a04"></span></a></li>
+                    <li><a href="#"><span colorCode="#1b6282"></span></a></li>
+                    <li><a href="#"><span colorCode="#716d91"></span></a></li>
+                    <li><a href="#"><span colorCode="#6f3799"></span></a></li>
+                    <li><a href="#"><span colorCode="#07000d"></span></a></li>
+                </ul>
+            </div>
+            <div class="filterOpenedCategory calculatedWidth">
+                <h3 class="d-flex align-items-center justify-content-between"><span>Size</span> <img class="showAll" src="assets/img/minus-black.svg" alt=""></h3>
+                <ul class="clearfix">
+                    <li><a href="#">
                     01</a></li>
-                <li><a href="#">02</a></li>
-                <li><a href="#">03</a></li>
-                <li><a href="#">04</a></li>
-                <li><a href="#">05</a></li>
-                <li><a href="#">06</a></li>
-            </ul>
-        </div>
-        <div class="filterOpenedCategory priceFilter">
-            <h3 class="d-flex align-items-center justify-content-between" style="margin-bottom: 0px;"><span>Price</span>
-                <p><strong class="fromRange">39Azn</strong>-<strong class="toRange">99Azn</strong></p>
-            </h3>
-            <form class="multi-range-field">
-                <input type="text" class="js-range-slider" name="priceRange" value="" />
-            </form>
-        </div>
-        <div class="specialOffers">
-            <ul>
-                <li class="d-flex align-items-center justify-content-between">
-                    <div class="left">
-                        <h4>New Arrivals</h4>
-                        <p>View new items only</p>
-                    </div>
-                    <div class="right">
-                        <a href="#" class="activateSpecialOffer">
-                            <span class="d-flex align-items-center justify-content-center">
+                    <li><a href="#">02</a></li>
+                    <li><a href="#">03</a></li>
+                    <li><a href="#">04</a></li>
+                    <li><a href="#">05</a></li>
+                    <li><a href="#">06</a></li>
+                </ul>
+            </div>
+            <div class="filterOpenedCategory priceFilter">
+                <h3 class="d-flex align-items-center justify-content-between" style="margin-bottom: 0px;"><span>Price</span>
+                    <p><strong class="fromRange">39Azn</strong>-<strong class="toRange">99Azn</strong></p>
+                </h3>
+                <form class="multi-range-field">
+                    <input type="text" class="js-range-slider" name="priceRange" value="" />
+                </form>
+            </div>
+            <div class="specialOffers">
+                <ul>
+                    <li class="d-flex align-items-center justify-content-between">
+                        <div class="left">
+                            <h4>New Arrivals</h4>
+                            <p>View new items only</p>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="activateSpecialOffer">
+                                <span class="d-flex align-items-center justify-content-center">
                                 <img class="close" src="assets/img/close-menu.svg" alt="">
                                 <img class="check" src="assets/img/check-mark-filter.svg" alt="">
                             </span>
-                        </a>
-                    </div>
-                </li>
-                <li class="filterLine"></li>
-                <li class="d-flex align-items-center justify-content-between">
-                    <div class="left">
-                        <h4>PROMOTIONS</h4>
-                        <p>Discounted items</p>
-                    </div>
-                    <div class="right">
-                        <a href="#" class="activateSpecialOffer">
-                            <span class="d-flex align-items-center justify-content-center">
+                            </a>
+                        </div>
+                    </li>
+                    <li class="filterLine"></li>
+                    <li class="d-flex align-items-center justify-content-between">
+                        <div class="left">
+                            <h4>PROMOTIONS</h4>
+                            <p>Discounted items</p>
+                        </div>
+                        <div class="right">
+                            <a href="#" class="activateSpecialOffer">
+                                <span class="d-flex align-items-center justify-content-center">
                                 <img class="close" src="assets/img/close-menu.svg" alt="">
                                 <img class="check" src="assets/img/check-mark-filter.svg" alt="">
                             </span>
-                        </a>
-                    </div>
-                </li>
-                <li class="filterLine"></li>
-            </ul>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="filterLine"></li>
+                </ul>
 
+            </div>
         </div>
-    </div>
-    <div class="resetFilter clearfix">
-        <a href="" class="reset d-flex align-items-center justify-content-center"><strong>Reset Filter</strong></a>
-        <a href="" class="items d-flex align-items-center justify-content-center"><strong>See <span class="countOfFilteredElements">192</span> Items</strong></a>
-    </div>
-</section>
-
-<script>
-    var iconLinks = {
-        minus: "assets/img/minus-black.svg",
-        plus: "assets/img/plus-black.svg"
-    }
-    var IconsColorAndImageRelation = [{
-        color: "#000",
-        leftArrowSrc: "assets/img/left-bold-black.svg",
-        rightArrowSrc: "assets/img/right-bold-black.svg",
-        downArrowSrc: "assets/img/down-bold-black.svg",
-        menuIcon: "assets/img/menu-black.svg",
-        searchIcon: "assets/img/search-bold-black.svg",
-        signinIcon: "assets/img/signin-bold-black.svg",
-        favoritesIcon: "assets/img/heart-bold-black.svg",
-        chartIcon: "assets/img/bag-bold-black.svg",
-        searchMinIcon: "assets/img/search-black.svg"
-    }, {
-        color: "#fff",
-        leftArrowSrc: "assets/img/left-bold-white.svg",
-        rightArrowSrc: "assets/img/right-bold-white.svg",
-        downArrowSrc: "assets/img/down-bold-white.svg",
-        menuIcon: "assets/img/menu-white.svg",
-        searchIcon: "assets/img/search-bold-white.svg",
-        signinIcon: "assets/img/signin-bold-white.svg",
-        favoritesIcon: "assets/img/heart-bold-white.svg",
-        chartIcon: "assets/img/bag-bold-white.svg",
-        searchMinIcon: "assets/img/search-white.svg"
-    }]
-
-    var slideCategories = ["Men", "Women", "Kids"];
-    var newArrivals = [{
-        "boldTextElement": '<span class="newArrivalBold">New Arrivals</span>',
-        "lightTextElement": '<span class="newArrivalLight">New Arrivals</span>',
-        "boldElementClass": ".newArrivalBold",
-        "lightElementClass": ".newArrivalLight",
-        'newArrivalSectionId': "#newArriwals",
-        'newArrivalSectionLine': ".newArriwalsLine",
-        'LEFTPOSNEWARRIVAL': 0,
-        'LEFTPOSITIONOFTEXT': 0,
-        'WIDTHOFTEXTELEMENT': 125
-
-    }, {
-        "boldTextElement": '<span class="newArrivalBold">New Arrivals</span>',
-        "lightTextElement": '<span class="newArrivalLight">New Arrivals</span>',
-        "boldElementClass": ".newArrivalBold",
-        "lightElementClass": ".newArrivalLight",
-        'newArrivalSectionId': "#newArriwalsDown",
-        'newArrivalSectionLine': ".newArriwalsLine",
-        'LEFTPOSNEWARRIVAL': 0,
-        'LEFTPOSITIONOFTEXT': 0,
-        'WIDTHOFTEXTELEMENT': 125
-    }];
-</script>
-
-<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="plugins/swiper/swiper.min.js"></script>
-<script src="plugins/range/ion.rangeSlider.min.js"></script>
-<script src="js/scripts.js"></script>
-
-<script>
-    //PRODUCTS PAGE
-    $(".productsSubCaterory").click(function(e) {
-        e.preventDefault();
-        $(".productsSubCaterory").removeClass("active");
-        $(this).addClass("active");
-    });
-    $(".filterOpenedCategory ul li a").click(function(e) {
-        e.preventDefault();
-        if (!$(this).hasClass("active")) {
-            $(this).addClass("active");
-        } else {
-            $(this).removeClass("active");
+        <div class="resetFilter clearfix">
+            <a href="" class="reset d-flex align-items-center justify-content-center"><strong>Reset Filter</strong></a>
+            <a href="" class="items d-flex align-items-center justify-content-center"><strong>See <span class="countOfFilteredElements">192</span> Items</strong></a>
+        </div>
+    </section>
+    <section id="pageLoad">
+        <div class="text d-flex align-items-center justify-content-center">
+            <span>Cousines</span>
+        </div>
+        <div class="title">
+            Cousines creation
+        </div>
+        <div class="bar">
+            <div id="fill"></div>
+        </div>
+    </section>
+    <script>
+        var iconLinks = {
+            minus: "assets/img/minus-black.svg",
+            plus: "assets/img/plus-black.svg"
         }
-    });
+        var IconsColorAndImageRelation = [{
+            color: "#000",
+            leftArrowSrc: "assets/img/left-bold-black.svg",
+            rightArrowSrc: "assets/img/right-bold-black.svg",
+            downArrowSrc: "assets/img/down-bold-black.svg",
+            menuIcon: "assets/img/menu-black.svg",
+            searchIcon: "assets/img/search-bold-black.svg",
+            signinIcon: "assets/img/signin-bold-black.svg",
+            favoritesIcon: "assets/img/heart-bold-black.svg",
+            chartIcon: "assets/img/bag-bold-black.svg",
+            searchMinIcon: "assets/img/search-black.svg"
+        }, {
+            color: "#fff",
+            leftArrowSrc: "assets/img/left-bold-white.svg",
+            rightArrowSrc: "assets/img/right-bold-white.svg",
+            downArrowSrc: "assets/img/down-bold-white.svg",
+            menuIcon: "assets/img/menu-white.svg",
+            searchIcon: "assets/img/search-bold-white.svg",
+            signinIcon: "assets/img/signin-bold-white.svg",
+            favoritesIcon: "assets/img/heart-bold-white.svg",
+            chartIcon: "assets/img/bag-bold-white.svg",
+            searchMinIcon: "assets/img/search-white.svg"
+        }]
 
-    //Products Color select
-    $(".colorContent").click(function(e) {
-        e.preventDefault();
-        if (!$(this).hasClass("active")) {
-            $(".colorContent").removeClass("active");
+        var slideCategories = ["Men", "Women", "Kids"];
+        var newArrivals = [{
+            "boldTextElement": '<span class="newArrivalBold">New Arrivals</span>',
+            "lightTextElement": '<span class="newArrivalLight">New Arrivals</span>',
+            "boldElementClass": ".newArrivalBold",
+            "lightElementClass": ".newArrivalLight",
+            'newArrivalSectionId': "#newArriwals",
+            'newArrivalSectionLine': ".newArriwalsLine",
+            'LEFTPOSNEWARRIVAL': 0,
+            'LEFTPOSITIONOFTEXT': 0,
+            'WIDTHOFTEXTELEMENT': 125
+
+        }, {
+            "boldTextElement": '<span class="newArrivalBold">New Arrivals</span>',
+            "lightTextElement": '<span class="newArrivalLight">New Arrivals</span>',
+            "boldElementClass": ".newArrivalBold",
+            "lightElementClass": ".newArrivalLight",
+            'newArrivalSectionId': "#newArriwalsDown",
+            'newArrivalSectionLine': ".newArriwalsLine",
+            'LEFTPOSNEWARRIVAL': 0,
+            'LEFTPOSITIONOFTEXT': 0,
+            'WIDTHOFTEXTELEMENT': 125
+        }];
+    </script>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="plugins/swiper/swiper.min.js"></script>
+    <script src="plugins/range/ion.rangeSlider.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/preload.js"></script>
+    <script src="js/lazyLoad.js"></script>
+    <script>
+        //PRODUCTS PAGE
+        $(".productsSubCaterory").click(function(e) {
+            e.preventDefault();
+            $(".productsSubCaterory").removeClass("active");
             $(this).addClass("active");
-        }
-    });
-    let min = 10;
-    let max = 500;
-    let from = 30;
-    let to = 200;
+        });
+        $(".filterOpenedCategory ul li a").click(function(e) {
+            e.preventDefault();
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+        });
 
-    $(".fromRange").text(from + " AZN");
-    $(".toRange").text(to + " AZN");
-    $(".js-range-slider").ionRangeSlider({
-        type: "double",
-        min: min,
-        max: max,
-        from: from,
-        to: to,
-        step: 5,
-        grid: false,
-        skin: "round",
-        postfix: " ₼",
-        prettify_enabled: true,
-        prettify_separator: ".",
-        onChange: function(data) {
-            $(".fromRange").text(data.from_pretty + " AZN");
-            $(".toRange").text(data.to_pretty + " AZN");
-        },
-    });
-</script>
+        //Products Color select
+        $(".colorContent").click(function(e) {
+            e.preventDefault();
+            if (!$(this).hasClass("active")) {
+                $(".colorContent").removeClass("active");
+                $(this).addClass("active");
+            }
+        });
+        //Products favorites select
+        $(".favoritesButton").click(function(e) {
+            e.preventDefault();
+            if (!$(this).hasClass("active")) {
+                $(this).addClass("active");
+            } else {
+                $(this).removeClass("active");
+            }
+        });
+
+        let min = 10;
+        let max = 500;
+        let from = 30;
+        let to = 200;
+
+        $(".fromRange").text(from + " AZN");
+        $(".toRange").text(to + " AZN");
+        $(".js-range-slider").ionRangeSlider({
+            type: "double",
+            min: min,
+            max: max,
+            from: from,
+            to: to,
+            step: 5,
+            grid: false,
+            skin: "round",
+            postfix: " ₼",
+            prettify_enabled: true,
+            prettify_separator: ".",
+            onChange: function(data) {
+                $(".fromRange").text(data.from_pretty + " AZN");
+                $(".toRange").text(data.to_pretty + " AZN");
+            },
+        });
+    </script>
 
 </body>
 

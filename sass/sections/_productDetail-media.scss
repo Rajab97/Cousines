@@ -1,0 +1,287 @@
+@media (max-width: $mobilePhones) {
+    #productDetail {
+        .swiper-container {
+            width: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    background-color: gray;
+                    .mainProductPicture {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .swiper-button-next {
+                width: 25%;
+                height: 100%;
+                top: 0;
+                right: 0;
+                z-index: 20;
+                img {
+                    width: 50px;
+                    height: auto;
+                    position: absolute;
+                    top: 50%;
+                    right: 0px;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .swiper-button-prev {
+                width: 25%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 20;
+                img {
+                    width: 50px;
+                    height: auto;
+                    position: absolute;
+                    top: 50%;
+                    left: 0px;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .swiper-pagination-bullet {
+                width: 15px;
+                border: 1px solid #fff;
+                height: 5px;
+                background-color: #fff;
+                margin-right: 3px;
+                opacity: .6;
+                border-radius: 0;
+            }
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+            .previousPageArrow {
+                display: none;
+            }
+        }
+        .informationContent {
+            width: 100%;
+            .informationBox {}
+        }
+    }
+}
+
+@media (min-width: $mobilePhones) {
+    #productDetail {
+        padding: 0px 0px;
+        .swiper-container {
+            width: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    background-color: gray;
+                    .mainProductPicture {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .swiper-button-next {
+                width: 25%;
+                height: 100%;
+                top: 0;
+                z-index: 20;
+                img {
+                    width: 75px;
+                    height: auto;
+                }
+                &::after {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .swiper-button-prev {
+                width: 25%;
+                height: 100%;
+                top: 0;
+                z-index: 20;
+                img {
+                    width: 75px;
+                    height: auto;
+                }
+                &::after {
+                    display: none;
+                }
+                &:focus {
+                    outline: none;
+                }
+            }
+            .swiper-pagination-bullet {
+                width: 15px;
+                border: 1px solid #fff;
+                height: 5px;
+                background-color: #fff;
+                margin-right: 3px;
+                opacity: .6;
+                border-radius: 0;
+            }
+            .swiper-pagination-bullet-active {
+                opacity: 1;
+            }
+            .previousPageArrow {
+                display: none;
+            }
+        }
+        .informationContent {
+            width: 100%;
+            .informationBox {}
+        }
+    }
+}
+
+@media (min-width: $tablets) {
+    #productDetail {
+        padding: 0px 0px;
+        .swiper-container {
+            width: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    background-color: gray;
+                    .mainProductPicture {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .swiper-button-next {
+                width: 25%;
+                height: 100%;
+                top: 0;
+                z-index: 20;
+                img {
+                    width: 75px;
+                    height: auto;
+                    position: absolute;
+                    top: 50%;
+                    right: -10px;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    display: none;
+                }
+            }
+            .swiper-button-prev {
+                width: 25%;
+                height: 100%;
+                top: 0;
+                z-index: 20;
+                img {
+                    width: 75px;
+                    height: auto;
+                    position: absolute;
+                    top: 50%;
+                    left: -10px;
+                    transform: translateY(-50%);
+                }
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        .informationContent {
+            width: 100%;
+            .informationBox {}
+        }
+    }
+}
+
+@media (min-width: $laptops) {
+    #productDetail {
+        padding: 15px 25px;
+        .imgContent {
+            width: 70%;
+            position: relative;
+            .imgContentWrapper {
+                width: 100%;
+                .productImage {
+                    width: 50%;
+                    height: auto;
+                    padding-right: 2px;
+                    padding-bottom: 2px;
+                    .mainProductPicture {
+                        width: 100%;
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .previousPageArrow {
+                display: block;
+                position: absolute;
+                top: 10px;
+                left: -15px;
+                transition: all .4s ease;
+                border-radius: 30px;
+                cursor: pointer;
+                .leftArrowContent {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 100%;
+                    background-color: #fff;
+                    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, .2);
+                    transition: all .4s ease;
+                    img {
+                        width: 30%;
+                        height: 30%;
+                    }
+                }
+                span {
+                    padding-right: 7px;
+                    opacity: 0;
+                    transition: all .4s ease;
+                    position: relative;
+                    left: -4px;
+                    font-size: 12px;
+                }
+                &:hover {
+                    background-color: #fff;
+                    box-shadow: 0 4px 6px -2px rgba(0, 0, 0, .2);
+                }
+                &:hover .leftArrowContent {
+                    box-shadow: none;
+                }
+                &:hover span {
+                    opacity: 1;
+                }
+            }
+        }
+        .informationContent {
+            width: 30%;
+            .informationBox {}
+        }
+        .swiper-button-next {
+            display: none;
+        }
+        .swiper-button-prev {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: $desktops) {}
+
+@media (min-width: $desktopsLarge) {}

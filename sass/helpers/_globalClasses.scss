@@ -60,6 +60,71 @@
     display: block;
 }
 
+.blur {
+    filter: blur(10px);
+    transition: all .4s ease;
+}
+
+.unblur {
+    transition: all .4s ease;
+}
+
+.loadContent {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    .loading {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border-top: 10px solid #e74c3c;
+        animation: load 2s linear infinite;
+        span {
+            font-family: "montserrat", sans-serif;
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            animation: loadText 2s linear infinite;
+        }
+        &::before,
+        &::after {
+            content: '';
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            top: -10px;
+            left: 0;
+            box-sizing: border-box;
+            border-radius: 50%;
+        }
+        &::before {
+            border-top: 10px solid #e67e22;
+            transform: rotate(120deg);
+        }
+        &::after {
+            border-top: 10px solid #3498db;
+            transform: rotate(240deg);
+        }
+    }
+}
+
+@keyframes load {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadText {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
 @keyframes searchOpen {
     from {
         width: 0px;
