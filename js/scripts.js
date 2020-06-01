@@ -98,6 +98,11 @@ $(document).ready(function() {
         configureAccardionOnDesktop();
     }
 
+    //Product detail bottom info
+    if ($("#productBottomInfoDesktop").length) {
+        animateProductDetailBottomInfo();
+    }
+
     //narTopHeight
     $("#navTopHeight").height($("#nav-bar").outerHeight() + "px");
 
@@ -1023,3 +1028,89 @@ function ChangeIconColorsOfProductDetailSlider(color) {
     }
     changeColorsOfNav(color);
 }
+
+function animateProductDetailBottomInfo() {
+    let footerSection = document.getElementById("footer");
+    let ProductDetailBottomInfoObserverOptions = {
+        threshold: 0,
+        rootMargin: "0px 0px 0px 0px"
+    };
+    let colorSectionObserver = new IntersectionObserver(function(entry, observer) {
+
+        if (entry[0].isIntersecting) {
+            $("#productBottomInfoDesktop").removeClass("active");
+            if (COLORPOPUPOPENED) {
+                $(".colorFilter .popup").fadeOut("400", function() {
+                    COLORPOPUPOPENED = false;
+                });
+            }
+            if (SIZEPOPUPOPENED) {
+                $(".sizeFilter .popup").fadeOut("400", function() {
+                    SIZEPOPUPOPENED = false;
+                });
+            }
+        } else {
+            $("#productBottomInfoDesktop").addClass("active");
+        }
+        console.log(entry[0].isIntersecting);
+    }, ProductDetailBottomInfoObserverOptions);
+
+
+    colorSectionObserver.observe(footerSection);
+
+}
+
+
+//Product detail color select hover
+let COLORPOPUPOPENED = false;
+$(".colorFilter .view").hover(function() {
+    if (!COLORPOPUPOPENED) {
+        let heightOfPopUp = $(this).siblings(".popup").outerHeight();
+        $(this).siblings(".popup").css({ top: -heightOfPopUp + "px" });
+        $(this).siblings(".popup").fadeIn("fast");
+        COLORPOPUPOPENED = true;
+    }
+}, function(target) {
+    if (!$(target.relatedTarget).hasClass("bridge")) {
+        $(this).siblings(".popup").fadeOut("fast", function() {
+            COLORPOPUPOPENED = false;
+        });
+
+    }
+})
+$(".colorFilter .popup").hover(function() {
+
+}, function(target) {
+    if (COLORPOPUPOPENED) {
+        $(this).fadeOut("fast", function() {
+            COLORPOPUPOPENED = false;
+        });
+    }
+})
+
+//Product detail size select hover
+let SIZEPOPUPOPENED = false;
+$(".sizeFilter .view").hover(function() {
+    if (!SIZEPOPUPOPENED) {
+        let heightOfPopUp = $(this).siblings(".popup").outerHeight();
+        $(this).siblings(".popup").css({ top: -heightOfPopUp + "px" });
+        $(this).siblings(".popup").fadeIn("fast");
+        SIZEPOPUPOPENED = true;
+    }
+}, function(target) {
+    if (!$(target.relatedTarget).hasClass("bridge")) {
+        $(this).siblings(".popup").fadeOut("fast", function() {
+            SIZEPOPUPOPENED = false;
+        });
+
+    }
+})
+$(".sizeFilter .popup").hover(function() {
+
+}, function(target) {
+    if (SIZEPOPUPOPENED) {
+        $(this).fadeOut("fast", function() {
+            SIZEPOPUPOPENED = false;
+        });
+    }
+})
