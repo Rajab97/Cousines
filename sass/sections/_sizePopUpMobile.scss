@@ -1,0 +1,131 @@
+@media (max-width: $mobilePhones) {
+    #sizePopUpMobile {
+        .popup {
+            width: 100%;
+            position: fixed;
+            z-index: 9999;
+            left: 0%;
+            bottom: -100%;
+            .content {
+                background-color: #fff;
+                width: 100%;
+                border-radius: 10px 10px 0px 0px;
+                max-height: 275px;
+                box-shadow: 0 5px 14px 0 rgba(0, 0, 0, .1);
+                overflow-y: auto;
+                overflow-x: hidden;
+                position: relative;
+                z-index: 100;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: rgb(232, 232, 232);
+                    border-radius: 5px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: darken(rgb(232, 232, 232), 10%);
+                    border-radius: 5px;
+                }
+                .popUpMobileSizes {
+                    padding: 15px 25px;
+                    .popUpSize {
+                        padding: 15px;
+                        border-bottom: 1px solid darken(#eee, 10%);
+                        cursor: pointer;
+                        transition: all .4s ease;
+                        strong {
+                            color: $textColor;
+                        }
+                        &.active {
+                            background-color: lighten(#eee, 2%);
+                        }
+                        &.stockout {
+                            cursor: default;
+                            background-color: lighten($textColor, 0%);
+                            opacity: 0.7;
+                            strong {
+                                color: #fff;
+                            }
+                        }
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $mobilePhones) {
+    #sizePopUpMobile {
+        .popup {
+            width: 100%;
+            position: fixed;
+            z-index: 9999;
+            left: 0%;
+            bottom: -100%;
+            .content {
+                background-color: #fff;
+                width: 100%;
+                border-radius: 10px 10px 0px 0px;
+                max-height: 275px;
+                box-shadow: 0 5px 14px 0 rgba(0, 0, 0, .1);
+                overflow-y: auto;
+                overflow-x: hidden;
+                position: relative;
+                z-index: 100;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: rgb(232, 232, 232);
+                    border-radius: 5px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: darken(rgb(232, 232, 232), 10%);
+                    border-radius: 5px;
+                }
+                .popUpMobileSizes {
+                    padding: 15px 25px;
+                    .popUpSize {
+                        padding: 15px;
+                        border-bottom: 1px solid darken(#eee, 10%);
+                        cursor: pointer;
+                        transition: all .4s ease;
+                        strong {
+                            color: $textColor;
+                        }
+                        &.active {
+                            background-color: lighten(#eee, 2%);
+                        }
+                        &.stockout {
+                            cursor: default;
+                            background-color: lighten($textColor, 0%);
+                            opacity: 0.7;
+                            strong {
+                                color: #fff;
+                            }
+                        }
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $tablets) {}
+
+@media (min-width: $laptops) {
+    #sizePopUpMobile {
+        display: none;
+    }
+}
+
+@media (min-width: $desktops) {}
+
+@media (min-width: $desktopsLarge) {}

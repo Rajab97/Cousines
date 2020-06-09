@@ -85,7 +85,7 @@ $(document).ready(function() {
     }
     //navheight
     if ($("#slider").length) {
-        ChangeIconColors(IconsColorAndImageRelation[0].color);
+        // ChangeIconColors(IconsColorAndImageRelation[0].color);
         //newArrivalsProduct
         configureNewArrivalsProducts();
     }
@@ -102,6 +102,7 @@ $(document).ready(function() {
     if ($("#productBottomInfoDesktop").length) {
         animateProductDetailBottomInfo();
     }
+
 
     //narTopHeight
     $("#navTopHeight").height($("#nav-bar").outerHeight() + "px");
@@ -142,99 +143,105 @@ function sleep(ms) {
 
 //Home Page Slider
 
-var swiperH = new Swiper('.swiper-container-h', {
-    speed: 800,
-    spaceBetween: 0,
-    direction: 'horizontal',
-    pagination: {
-        el: '.swiper-pagination-h',
-        clickable: true,
-        renderBullet: function(index, className) {
-            return '<span class="' + className + ' ' + COLORCHANGEDTEXTS.substring(1, COLORCHANGEDTEXTS.length) + '">' + slideCategories[index] + '</span>';
+if ($("#slider").length) {
+    var swiperH = new Swiper('.swiper-container-h', {
+        speed: 800,
+        spaceBetween: 0,
+        direction: 'horizontal',
+        pagination: {
+            el: '.swiper-pagination-h',
+            clickable: true,
+            renderBullet: function(index, className) {
+                return '<span class="' + className + ' ' + COLORCHANGEDTEXTS.substring(1, COLORCHANGEDTEXTS.length) + '">' + slideCategories[index] + '</span>';
+            },
         },
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    }
-});
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+    });
 
 
-var swiperV = new Swiper('.swiper-container-v', {
-    speed: 800,
-    direction: 'vertical',
-    spaceBetween: 0,
+    var swiperV = new Swiper('.swiper-container-v', {
+        speed: 800,
+        direction: 'vertical',
+        spaceBetween: 0,
 
-    pagination: {
-        el: '.swiper-pagination-v',
-        clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-v-button-next',
-        prevEl: '.swiper-v-button-prev',
-    }
-});
-var swiperNewArrivals = new Swiper('.swiper-newArrivals', {
-    slidesPerView: 2,
-    spaceBetween: 20,
-    freeMode: true,
-    navigation: {
-        nextEl: '.newArrivals-next',
-        prevEl: '.newArrivals-prev',
-    },
-    // init: false,
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: true,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
+        pagination: {
+            el: '.swiper-pagination-v',
+            clickable: true,
         },
-        768: {
-            slidesPerView: 3,
-            spaceBetween: 25,
+        navigation: {
+            nextEl: '.swiper-v-button-next',
+            prevEl: '.swiper-v-button-prev',
+        }
+    });
+    var swiperNewArrivals = new Swiper('.swiper-newArrivals', {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        freeMode: true,
+        navigation: {
+            nextEl: '.newArrivals-next',
+            prevEl: '.newArrivals-prev',
         },
-        1024: {
-            slidesPerView: 3,
-            spaceBetween: 15,
+        // init: false,
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: true,
         },
-        1440: {
-            slidesPerView: 4,
-            spaceBetween: 15,
-        },
-    }
-});
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 25,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+            },
+            1440: {
+                slidesPerView: 4,
+                spaceBetween: 15,
+            },
+        }
+    });
 
 
-var nextSlideSelector = swiperH.params.el + " > ." + swiperH.params.wrapperClass + " > ." + swiperH.params.slideNextClass;
-var prevSlideSelector = swiperH.params.el + " > ." + swiperH.params.wrapperClass + " > ." + swiperH.params.slidePrevClass;
+    var nextSlideSelector = swiperH.params.el + " > ." + swiperH.params.wrapperClass + " > ." + swiperH.params.slideNextClass;
+    var prevSlideSelector = swiperH.params.el + " > ." + swiperH.params.wrapperClass + " > ." + swiperH.params.slidePrevClass;
 
 
 
-if (swiperH != null && swiperH != undefined) {
+    if (swiperH != null && swiperH != undefined) {
 
-    if (swiperH.eventsListeners && swiperH.eventsListeners.snapIndexChange != null && swiperH.eventsListeners.snapIndexChange != undefined) {
+        if (swiperH.eventsListeners && swiperH.eventsListeners.snapIndexChange != null && swiperH.eventsListeners.snapIndexChange != undefined) {
 
-        swiperH.eventsListeners.snapIndexChange.push(function() {
+            swiperH.eventsListeners.snapIndexChange.push(function() {
 
-            setPrevAndNextCategoriesToArrows(this);
+                setPrevAndNextCategoriesToArrows(this);
 
-            let verticalSlide = swiperV[this.snapIndex]
-            SlideChangeColor(verticalSlide);
-        })
-    }
-}
-if (swiperV != null && swiperV != undefined) {
-    if (isIterable(swiperV)) {
-        for (let vSlider of swiperV) {
-            vSlider.eventsListeners.snapIndexChange.push(function() {
-                SlideChangeColor(this);
+                let verticalSlide = swiperV[this.snapIndex]
+                SlideChangeColor(verticalSlide);
             })
         }
     }
+    if (swiperV != null && swiperV != undefined) {
+        if (isIterable(swiperV)) {
+            for (let vSlider of swiperV) {
+                vSlider.eventsListeners.snapIndexChange.push(function() {
+                    SlideChangeColor(this);
+                })
+            }
+        }
+    }
+    console.log(swiperH.snapIndex);
+    setPrevAndNextCategoriesToArrows(swiperH);
+    SlideChangeColor(swiperV[swiperH.snapIndex]);
 }
+
 
 function isIterable(obj) {
     // checks for null and undefined
@@ -248,20 +255,17 @@ $(".swiper-next-section").click(function() {
     let heightOfDocumnet = $("#slider").height();
     $("html, body").animate({ scrollTop: heightOfDocumnet }, 1250);
 });
-//SetInitialIcons
-if (swiperV.eventsListeners && swiperH.eventsListeners && swiperV.eventsListeners.snapIndexChange != null && swiperV.eventsListeners.snapIndexChange != undefined && swiperH.eventsListeners.snapIndexChange != null && swiperH.eventsListeners.snapIndexChange != undefined) {
-    SlideChangeColor(swiperV[swiperH.snapIndex]);
-    setPrevAndNextCategoriesToArrows(swiperH);
-}
+
 
 //Set initial right and left categories to arrows
 
 
 function SlideChangeColor(vSlide) {
     let activeVerticalElement = $(vSlide.slides[vSlide.snapIndex])[0];
-    $("body").attr("navColor", $(activeVerticalElement).attr("color"));
-    ChangeGlobalTextColors($(activeVerticalElement).attr("color"))
-    ChangeIconColors($(activeVerticalElement).attr("color"))
+    let color = $(activeVerticalElement).attr("color");
+    $("body").attr("navColor", color);
+    ChangeGlobalTextColors(color);
+    ChangeIconColors(color);
 }
 
 function ChangeGlobalTextColors(color) {
@@ -275,6 +279,7 @@ function ChangeGlobalTextColors(color) {
 }
 
 function ChangeIconColors(color) {
+    console.log(color + " color");
     for (let elem of IconsColorAndImageRelation) {
         if (elem.color == color) {
             if (swiperH.eventsListeners.snapIndexChange != null && swiperH.eventsListeners.snapIndexChange != undefined) {
@@ -293,7 +298,6 @@ function ChangeIconColors(color) {
             $(".slideNextSectionIcon").attr("src", elem.downArrowSrc);
         }
     }
-    console.log("budu")
     changeColorsOfNav(color);
 }
 
@@ -1039,6 +1043,7 @@ function animateProductDetailBottomInfo() {
 
         if (entry[0].isIntersecting) {
             $("#productBottomInfoDesktop").removeClass("active");
+            $("#productBottomInfoMobile").removeClass("active");
             if (COLORPOPUPOPENED) {
                 $(".colorFilter .popup").fadeOut("400", function() {
                     COLORPOPUPOPENED = false;
@@ -1051,8 +1056,8 @@ function animateProductDetailBottomInfo() {
             }
         } else {
             $("#productBottomInfoDesktop").addClass("active");
+            $("#productBottomInfoMobile").addClass("active");
         }
-        console.log(entry[0].isIntersecting);
     }, ProductDetailBottomInfoObserverOptions);
 
 
@@ -1114,3 +1119,30 @@ $(".sizeFilter .popup").hover(function() {
         });
     }
 })
+
+//Color Filter Mobile
+$(".mobile-filter .view").click(function() {
+    let popQuery = $(this).attr("popUp");
+    $("#productBottomInfoMobile").removeClass("active");
+    $("#fixedCover").fadeIn(400);
+    $("body").css({ "overflow": "hidden" });
+    $(popQuery).addClass("active");
+    $(popQuery).children(".popup").delay(400).animate({ bottom: 0 }, 400);
+});
+$("#fixedCover").click(function() {
+    closeFilterPopUp();
+});
+
+function closeFilterPopUp() {
+    for (let popup of $(".filterMobilePopUps")) {
+        if ($(popup).hasClass("active")) {
+            $("#fixedCover").fadeOut(400);
+            $("body").css({ "overflow": "auto" });
+            $(popup).removeClass("active");
+            $(popup).children(".popup").animate({ bottom: "-100%" }, 400, function() {
+                $("#productBottomInfoMobile").addClass("active");
+            });
+
+        }
+    }
+}

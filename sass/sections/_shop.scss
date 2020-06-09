@@ -35,8 +35,10 @@
                 border: 1px solid #000;
                 @include font-size($mobilePhones, $desktopsLarge, 19px, 30px);
                 transition: all .4s ease;
+                background-color: transparent;
+                color: #000;
                 &:hover {
-                    background-color: $textColor;
+                    background-color: #000;
                     color: $textColorWhite;
                 }
             }

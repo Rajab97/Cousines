@@ -78,14 +78,14 @@
                                 }
                             }
                         }
-                        &:hover p {
-                            z-index: 1;
-                            opacity: 0;
-                        }
-                        &:hover ul {
-                            z-index: 2;
-                            opacity: 1;
-                        }
+                        // &:hover p {
+                        //     z-index: 1;
+                        //     opacity: 0;
+                        // }
+                        // &:hover ul {
+                        //     z-index: 2;
+                        //     opacity: 1;
+                        // }
                     }
                 }
                 .imgContent {
@@ -134,41 +134,6 @@
                         height: 42px;
                         border-radius: 50%;
                         box-shadow: 0px 2px 4px rgba(0, 0, 0, .06), 0px 4px 6px rgba(0, 0, 0, .06);
-                        img {
-                            width: 50%;
-                            height: auto;
-                            transition: all .5s ease;
-                            position: absolute;
-                            left: 50%;
-                            top: 50%;
-                            transform: translate(-50%, -50%);
-                        }
-                        .simple {
-                            opacity: 1;
-                            z-index: 3;
-                        }
-                        .hover {
-                            opacity: 0;
-                            z-index: 2;
-                        }
-                        .selected {
-                            opacity: 0;
-                            z-index: 1;
-                        }
-                        &:hover .hover {
-                            opacity: 1;
-                            z-index: 4;
-                        }
-                        &.active .simple {
-                            opacity: 0;
-                        }
-                        &.active:hover .hover {
-                            opacity: 0;
-                        }
-                        &.active .selected {
-                            opacity: 1;
-                            z-index: 5;
-                        }
                     }
                     .imgContentBottom {
                         padding: 10px;
@@ -218,6 +183,14 @@
                             }
                         }
                     }
+                }
+                &:hover .productInfo .colors p {
+                    z-index: 1;
+                    opacity: 0;
+                }
+                &:hover .productInfo .colors ul {
+                    z-index: 2;
+                    opacity: 1;
                 }
             }
         }

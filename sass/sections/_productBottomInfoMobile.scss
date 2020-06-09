@@ -1,0 +1,168 @@
+@media (max-width: $mobilePhones) {
+    #productBottomInfoMobile {
+        display: flex;
+        position: fixed;
+        bottom: 17px;
+        left: 10px;
+        right: 10px;
+        width: auto;
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 10px;
+        -ms-transform: translateY(77px);
+        transform: translateY(77px);
+        transition: all .4s ease;
+        border-radius: 5px;
+        box-shadow: 0 12px 14px 0 rgba(0, 0, 0, .2);
+        background-color: #fff;
+        z-index: 999;
+        &.active {
+            transform: translateY(0);
+        }
+        .left {
+            p {
+                height: 25px;
+                text-align: center;
+                width: 170px;
+                font-size: 12px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 25px;
+                letter-spacing: 0.7px;
+                color: #313131;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: left;
+            }
+            strong {}
+        }
+        .right {
+            .addProductToChart {
+                background-color: $textColor;
+                color: #fff;
+                display: block;
+                border-radius: 5px;
+                width: 95px;
+                top: 50%;
+                height: 35px;
+                padding: 0px 14px;
+                font-size: 14px;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 35px;
+            }
+        }
+    }
+}
+
+@media (min-width: $mobilePhones) {
+    #productBottomInfoMobile {
+        display: flex;
+        position: fixed;
+        bottom: 17px;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 5px;
+        -ms-transform: translateY(77px);
+        transform: translateY(77px);
+        transition: all .4s ease;
+        border-radius: 10px;
+        box-shadow: 0 12px 14px 0 rgba(0, 0, 0, .2);
+        background-color: #fff;
+        z-index: 999;
+        &.active {
+            transform: translateY(0);
+        }
+        .left {
+            p {
+                height: 25px;
+                text-align: center;
+                width: 200px;
+                font-size: 12px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 30px;
+                letter-spacing: 0.7px;
+                color: #313131;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: left;
+            }
+        }
+        .right {
+            .addProductToChart {
+                background-color: $textColor;
+                color: #fff;
+                display: block;
+                border-radius: 5px;
+                width: 115px;
+                top: 50%;
+                height: 45px;
+                padding: 0px 24px;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media (min-width: $tablets) {
+    #productBottomInfoMobile {
+        left: 75px;
+        right: 75px;
+        height: 60px;
+        padding-left: 20px;
+        border-radius: 5px;
+        padding-right: 10px;
+        .left {
+            p {
+                height: 25px;
+                text-align: center;
+                width: 300px;
+                font-size: 14px;
+                font-weight: 300;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 30px;
+                letter-spacing: 0.7px;
+                color: #313131;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-align: left;
+            }
+        }
+        .right {
+            .addProductToChart {
+                border-radius: 5px;
+                width: 115px;
+                top: 50%;
+                height: 45px;
+                padding: 0px 24px;
+                font-size: 18px;
+                text-transform: uppercase;
+                text-align: center;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@media (min-width: $laptops) {
+    #productBottomInfoMobile {
+        display: none;
+    }
+}
+
+@media (min-width: $desktops) {}
+
+@media (min-width: $desktopsLarge) {}
