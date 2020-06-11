@@ -1,6 +1,11 @@
 @media (max-width: $mobilePhones) {
-    #newArrivalProducts {
+    .newArrivalProducts {
+        .sectionTitle {
+            width: 100%;
+            margin-bottom: 20px;
+        }
         .swiper-newArrivals {
+            padding: 0px 10px;
             .swiper-wrapper {
                 .swiper-slide {
                     .imgSection {
@@ -30,8 +35,13 @@
 }
 
 @media (min-width: $mobilePhones) {
-    #newArrivalProducts {
+    .newArrivalProducts {
+        .sectionTitle {
+            width: 100%;
+            margin-bottom: 25px;
+        }
         .swiper-newArrivals {
+            padding: 0px 15px;
             .swiper-wrapper {
                 .swiper-slide {
                     .imgSection {
@@ -62,8 +72,9 @@
 
 @media (min-width: $tablets) {
     @media (min-width: $laptops) {
-        #newArrivalProducts {
+        .newArrivalProducts {
             .swiper-newArrivals {
+                padding: 0px 25px;
                 .swiper-wrapper {
                     padding-bottom: 25px;
                     .swiper-slide {
@@ -95,7 +106,7 @@
 }
 
 @media (min-width: $laptops) {
-    #newArrivalProducts {
+    .newArrivalProducts {
         .swiper-newArrivals {
             .swiper-wrapper {
                 padding-bottom: 30px;

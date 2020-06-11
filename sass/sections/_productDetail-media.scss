@@ -1,5 +1,6 @@
 @media (max-width: $mobilePhones) {
     #productDetail {
+        padding: 0px 0px;
         .swiper-container {
             width: 100%;
             .swiper-wrapper {
@@ -17,15 +18,10 @@
                 width: 25%;
                 height: 100%;
                 top: 0;
-                right: 0;
                 z-index: 20;
                 img {
-                    width: 50px;
+                    width: 75px;
                     height: auto;
-                    position: absolute;
-                    top: 50%;
-                    right: 0px;
-                    transform: translateY(-50%);
                 }
                 &::after {
                     display: none;
@@ -38,15 +34,10 @@
                 width: 25%;
                 height: 100%;
                 top: 0;
-                left: 0;
                 z-index: 20;
                 img {
-                    width: 50px;
+                    width: 75px;
                     height: auto;
-                    position: absolute;
-                    top: 50%;
-                    left: 0px;
-                    transform: translateY(-50%);
                 }
                 &::after {
                     display: none;
@@ -82,15 +73,16 @@
                         font-size: 16px;
                         font-weight: 300;
                         line-height: 23px;
+                        width: calc( 100% - 40px);
                         color: $textColor;
                         opacity: 0.8;
-                        width: 65%;
                     }
                     p {
-                        font-size: 22px;
+                        font-size: 16px;
+                        width: 90%;
                         font-weight: 600;
+                        width: calc( 100% - 40px);
                         color: #000;
-                        width: 35%;
                         text-align: right;
                         span {
                             margin-left: 3px;
@@ -110,39 +102,7 @@
                 .productSaleForm {
                     margin-bottom: 55px;
                     .colorSelectContent {
-                        margin-bottom: 25px;
                         display: none;
-                        .colorBox {
-                            border: 1px solid transparent;
-                            position: relative;
-                            margin-right: 7px;
-                            margin-bottom: 5px;
-                            width: 25px;
-                            height: 25px;
-                            transition: all .4s ease;
-                            border: 1px solid darken(#eee, 10%);
-                            cursor: pointer;
-                            &.active {
-                                border: 1px solid rgba(49, 49, 49, .7);
-                            }
-                            &.unable {
-                                border: 1px solid lighten(#e83c55, 20%);
-                                background-color: lighten(#e83c55, 40%);
-                                cursor: default;
-                            }
-                            .selectColor {
-                                display: inline-block;
-                                width: 17px;
-                                height: 17px;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                            input {
-                                display: none;
-                            }
-                        }
                     }
                     .modelHeight {
                         color: $textColor;
@@ -151,130 +111,55 @@
                         margin-bottom: 30px;
                     }
                     .sizeSelectContent {
-                        margin-bottom: 40px;
                         display: none;
-                        .sizeGuide {
-                            color: $textColor;
-                            margin-bottom: 15px;
-                            a {
-                                font-size: 14px;
-                                color: $textColor;
-                                opacity: 0.8;
-                                .right-icon {
-                                    width: 8px;
-                                    height: 8px;
-                                    opacity: 0.7;
-                                }
-                                .rule-icon {
-                                    width: 15px;
-                                    height: 15px;
-                                    margin-right: 3px;
-                                }
-                            }
-                        }
-                        .sizeSelectContentWrapper {
-                            .sizeBox {
-                                border: 1px solid #eee;
-                                width: 40px;
-                                height: 30px;
-                                text-align: center;
-                                position: relative;
-                                cursor: pointer;
-                                transition: all .4s ease;
-                                margin-bottom: 2px;
-                                margin-right: 2px;
-                                span {
-                                    color: $textColor;
-                                    opacity: 0.8;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                }
-                                &.active {
-                                    border: 1px solid $textColor;
-                                }
-                                &.unable {
-                                    background-color: $textColor;
-                                    border: 1px solid $textColor;
-                                    cursor: initial;
-                                    span {
-                                        color: #fff;
-                                        cursor: default;
-                                    }
-                                }
-                                input {
-                                    display: none;
-                                }
-                            }
-                        }
                     }
                     .mobile-filter {
                         height: 100%;
                         margin-bottom: 30px;
-                        border-bottom: 1px solid darken(#eee, 5%);
                         .colorFilterMobile {
-                            height: 100%;
-                            position: relative;
-                            z-index: 101;
                             .view {
-                                height: 100%;
-                                width: 140px;
-                                border-left: 1px solid darken(#eee, 5%);
-                                padding: 15px 10px;
-                                .whenDefaultColorSelected {
-                                    font-size: 18px;
-                                    font-weight: 300;
-                                    color: $textColor;
-                                }
                                 .whenColorSelected {
-                                    font-size: 18px;
-                                    font-weight: 500;
-                                    color: $textColor;
                                     .selectedColor {
-                                        height: 22px;
-                                        width: 22px;
+                                        position: relative;
+                                        top: 5px;
+                                        height: 20px;
+                                        width: 20px;
+                                        display: inline-block;
                                         margin-right: 10px;
                                         border: 1px solid darken(#eee, 20%);
                                         box-sizing: border-box;
-                                        padding: 3px;
                                         transition: all .4s ease;
                                         cursor: pointer;
+                                        margin-left: 5px;
                                         .selectedColorBox {
                                             display: inline-block;
-                                            width: 100%;
-                                            height: 100%;
+                                            width: 80%;
+                                            height: 80%;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
                                         }
-                                    }
-                                }
-                                .downArrow {
-                                    display: inline-block;
-                                    width: 15px;
-                                    height: 15px;
-                                    opacity: .8;
-                                    img {
-                                        width: 100%;
-                                        height: 100%;
-                                        position: relative;
-                                        top: -3px;
                                     }
                                 }
                             }
                         }
-                        .sizeFilterMobile {
+                        .filterMobile {
                             position: relative;
                             height: 100%;
+                            border-bottom: 1px solid darken(#eee, 5%);
                             .view {
                                 height: 100%;
                                 width: 140px;
+                                max-height: 55px;
                                 border-left: 1px solid darken(#eee, 5%);
                                 padding: 15px 10px;
-                                .whenDefaultSizeSelected {
+                                .whenDefaultSelected {
                                     font-size: 18px;
                                     font-weight: 300;
                                     color: $textColor;
                                 }
-                                .whenSizeSelected {
+                                .whenSelected {
                                     font-size: 18px;
                                     font-weight: 500;
                                     color: $textColor;
@@ -295,9 +180,9 @@
                         }
                     }
                     .submitForm {
-                        background-color: transparent;
+                        background-color: $textColor;
                         border: 1px solid $textColor;
-                        color: $textColor;
+                        color: #fff;
                         transition: all .4s ease;
                         width: 100%;
                         margin: 0 auto;
@@ -308,9 +193,14 @@
                         text-transform: uppercase;
                         font-weight: 600;
                         cursor: pointer;
-                        &:hover {
-                            background-color: $textColor;
-                            color: #fff;
+                        &:focus() {
+                            outline: none;
+                        }
+                        &.addProductToChart {
+                            display: block;
+                        }
+                        &.addProductToChartDesktop {
+                            display: none;
                         }
                     }
                 }
@@ -493,38 +383,7 @@
                 .productSaleForm {
                     margin-bottom: 55px;
                     .colorSelectContent {
-                        margin-bottom: 25px;
                         display: none;
-                        .colorBox {
-                            position: relative;
-                            margin-right: 7px;
-                            margin-bottom: 5px;
-                            width: 25px;
-                            height: 25px;
-                            transition: all .4s ease;
-                            border: 1px solid darken(#eee, 10%);
-                            cursor: pointer;
-                            &.active {
-                                border: 1px solid rgba(49, 49, 49, .7);
-                            }
-                            &.unable {
-                                border: 1px solid lighten(#e83c55, 20%);
-                                background-color: lighten(#e83c55, 40%);
-                                cursor: default;
-                            }
-                            .selectColor {
-                                display: inline-block;
-                                width: 17px;
-                                height: 17px;
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                transform: translate(-50%, -50%);
-                            }
-                            input {
-                                display: none;
-                            }
-                        }
                     }
                     .modelHeight {
                         color: $textColor;
@@ -533,63 +392,7 @@
                         margin-bottom: 30px;
                     }
                     .sizeSelectContent {
-                        margin-bottom: 40px;
                         display: none;
-                        .sizeGuide {
-                            color: $textColor;
-                            margin-bottom: 15px;
-                            a {
-                                font-size: 14px;
-                                color: $textColor;
-                                opacity: 0.8;
-                                .right-icon {
-                                    width: 8px;
-                                    height: 8px;
-                                    opacity: 0.7;
-                                }
-                                .rule-icon {
-                                    width: 15px;
-                                    height: 15px;
-                                    margin-right: 3px;
-                                }
-                            }
-                        }
-                        .sizeSelectContentWrapper {
-                            .sizeBox {
-                                border: 1px solid #eee;
-                                width: 40px;
-                                height: 30px;
-                                text-align: center;
-                                position: relative;
-                                cursor: pointer;
-                                transition: all .4s ease;
-                                margin-bottom: 2px;
-                                margin-right: 2px;
-                                span {
-                                    color: $textColor;
-                                    opacity: 0.8;
-                                    position: absolute;
-                                    top: 50%;
-                                    left: 50%;
-                                    transform: translate(-50%, -50%);
-                                }
-                                &.active {
-                                    border: 1px solid $textColor;
-                                }
-                                &.unable {
-                                    background-color: $textColor;
-                                    border: 1px solid $textColor;
-                                    cursor: initial;
-                                    span {
-                                        color: #fff;
-                                        cursor: default;
-                                    }
-                                }
-                                input {
-                                    display: none;
-                                }
-                            }
-                        }
                     }
                     .mobile-filter {
                         height: 100%;
@@ -613,19 +416,27 @@
                                     font-size: 18px;
                                     font-weight: 500;
                                     color: $textColor;
+                                    line-height: 22px;
                                     .selectedColor {
+                                        position: relative;
+                                        top: 5px;
                                         height: 22px;
                                         width: 22px;
+                                        display: inline-block;
                                         margin-right: 10px;
                                         border: 1px solid darken(#eee, 20%);
                                         box-sizing: border-box;
-                                        padding: 3px;
                                         transition: all .4s ease;
                                         cursor: pointer;
+                                        margin-left: 5px;
                                         .selectedColorBox {
                                             display: inline-block;
-                                            width: 100%;
-                                            height: 100%;
+                                            width: 80%;
+                                            height: 80%;
+                                            position: absolute;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%, -50%);
                                         }
                                     }
                                 }
@@ -643,7 +454,7 @@
                                 }
                             }
                         }
-                        .sizeFilterMobile {
+                        .filterMobile {
                             position: relative;
                             height: 100%;
                             .view {
@@ -651,12 +462,12 @@
                                 width: 140px;
                                 border-left: 1px solid darken(#eee, 5%);
                                 padding: 15px 10px;
-                                .whenDefaultSizeSelected {
+                                .whenDefaultSelected {
                                     font-size: 18px;
                                     font-weight: 300;
                                     color: $textColor;
                                 }
-                                .whenSizeSelected {
+                                .whenSelected {
                                     font-size: 18px;
                                     font-weight: 500;
                                     color: $textColor;
@@ -677,9 +488,9 @@
                         }
                     }
                     .submitForm {
-                        background-color: transparent;
+                        background-color: $textColor;
                         border: 1px solid $textColor;
-                        color: $textColor;
+                        color: #fff;
                         transition: all .4s ease;
                         width: 100%;
                         margin: 0 auto;
@@ -690,9 +501,14 @@
                         text-transform: uppercase;
                         font-weight: 600;
                         cursor: pointer;
-                        &:hover {
-                            background-color: $textColor;
-                            color: #fff;
+                        &:focus() {
+                            outline: none;
+                        }
+                        &.addProductToChart {
+                            display: block;
+                        }
+                        &.addProductToChartDesktop {
+                            display: none;
                         }
                     }
                 }
@@ -957,9 +773,9 @@
                         }
                     }
                     .submitForm {
-                        background-color: transparent;
+                        background-color: $textColor;
                         border: 1px solid $textColor;
-                        color: $textColor;
+                        color: #fff;
                         transition: all .4s ease;
                         width: 100%;
                         margin: 0 auto;
@@ -970,9 +786,8 @@
                         text-transform: uppercase;
                         font-weight: 600;
                         cursor: pointer;
-                        &:hover {
-                            background-color: $textColor;
-                            color: #fff;
+                        &:focus {
+                            outline: none;
                         }
                     }
                 }
@@ -1136,6 +951,7 @@
                         font-weight: 600;
                         width: calc( 100% - 40px);
                         color: #000;
+                        text-align: left;
                         span {
                             margin-left: 3px;
                         }
@@ -1158,6 +974,7 @@
                         .colorBox {
                             position: relative;
                             margin-right: 7px;
+                            margin-bottom: 5px;
                             width: 35px;
                             height: 35px;
                             transition: all .4s ease;
@@ -1191,10 +1008,10 @@
                         opacity: 0.8;
                         margin-bottom: 30px;
                     }
-                    .sizeSelectContent {
-                        margin-bottom: 50px;
+                    .selectContent {
+                        margin-bottom: 25px;
                         display: block;
-                        .sizeGuide {
+                        .guide {
                             color: $textColor;
                             margin-bottom: 15px;
                             a {
@@ -1213,8 +1030,8 @@
                                 }
                             }
                         }
-                        .sizeSelectContentWrapper {
-                            .sizeBox {
+                        .selectContentWrapper {
+                            .selectWrapperBox {
                                 border: 1px solid #eee;
                                 width: 45px;
                                 height: 35px;
@@ -1254,9 +1071,9 @@
                         display: none;
                     }
                     .submitForm {
-                        background-color: transparent;
+                        background-color: $textColor;
                         border: 1px solid $textColor;
-                        color: $textColor;
+                        color: #fff;
                         transition: all .4s ease;
                         width: 100%;
                         margin: 0 auto;
@@ -1267,9 +1084,19 @@
                         text-transform: uppercase;
                         font-weight: 600;
                         cursor: pointer;
-                        &:hover {
-                            background-color: $textColor;
-                            color: #fff;
+                        &.addProductToChart {
+                            display: none;
+                        }
+                        &.addProductToChartDesktop {
+                            display: block;
+                            &:hover {
+                                background-color: #fff;
+                                color: $textColor;
+                            }
+                            &.active:hover {
+                                border-radius: 10px;
+                                color: #fff;
+                            }
                         }
                     }
                 }

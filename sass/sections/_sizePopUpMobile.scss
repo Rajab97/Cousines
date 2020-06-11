@@ -1,12 +1,12 @@
 @media (max-width: $mobilePhones) {
-    #sizePopUpMobile {
-        .popup {
+    .filterMobilePopUps {
+        .popupCommon {
             width: 100%;
             position: fixed;
             z-index: 9999;
             left: 0%;
             bottom: -100%;
-            .content {
+            .contentCommon {
                 background-color: #fff;
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
@@ -27,9 +27,9 @@
                     background-color: darken(rgb(232, 232, 232), 10%);
                     border-radius: 5px;
                 }
-                .popUpMobileSizes {
+                .popUpUl {
                     padding: 15px 25px;
-                    .popUpSize {
+                    .popUpLi {
                         padding: 15px;
                         border-bottom: 1px solid darken(#eee, 10%);
                         cursor: pointer;
@@ -59,14 +59,14 @@
 }
 
 @media (min-width: $mobilePhones) {
-    #sizePopUpMobile {
-        .popup {
+    .filterMobilePopUps {
+        .popupCommon {
             width: 100%;
             position: fixed;
             z-index: 9999;
             left: 0%;
             bottom: -100%;
-            .content {
+            .contentCommon {
                 background-color: #fff;
                 width: 100%;
                 border-radius: 10px 10px 0px 0px;
@@ -87,9 +87,9 @@
                     background-color: darken(rgb(232, 232, 232), 10%);
                     border-radius: 5px;
                 }
-                .popUpMobileSizes {
+                .popUpUl {
                     padding: 15px 25px;
-                    .popUpSize {
+                    .popUpLi {
                         padding: 15px;
                         border-bottom: 1px solid darken(#eee, 10%);
                         cursor: pointer;

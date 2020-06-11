@@ -789,11 +789,11 @@ Socks</span>
                         <img src="assets/img/favorite-active.svg" class="selected" alt="">
                     </div>
                 </div>
-                <form action="" class="productSaleForm">
+                <form action="test/test" class="productSaleForm" id="productSaleForm">
                     <div class="colorSelectContent d-none d-lg-flex flex-lg-wrap">
-                        <div class="colorBox active">
+                        <div class="colorBox">
                             <span class="selectColor" style="background-color: bisque;"></span>
-                            <input type="radio" name="color" checked value="bisque">
+                            <input type="radio" name="color" value="bisque">
                         </div>
                         <div class="colorBox">
                             <span class="selectColor" style="background-color: rebeccapurple;"></span>
@@ -820,65 +820,113 @@ Socks</span>
                             <input type="radio" name="color" value="teal">
                         </div>
                     </div>
-                    <div class="mobile-filter d-lg-none d-flex align-items-center">
-                        <div class="colorFilterMobile">
+                    <span class="colorMustSelected" style="color: red;font-size: 12px;position: relative; top: -25px;display: none;">Color must be chosen</span>
+                    <div class="mobile-filter d-lg-none d-flex align-items-center flex-wrap">
+                        <div class="filterMobile colorFilterMobile">
                             <div class="view d-flex align-items-center justify-content-between" popUp="#colorPopUpMobile">
-                                <span class="whenDefaultColorSelected">Color</span>
-                                <strong class="whenColorSelected" style="display: none;">Color: <span class="selectedColor" style="background-color: bisque;"><span class="selectedColorBox"></span></span></strong>
+                                <span class="whenDefaultColorSelected whenDefaultSelected">Color</span>
+                                <strong class="whenColorSelected whenSelected" style="display: none;">Color: <span class="selectedColor" color="bisque"><span style="background-color: bisque;" class="selectedColorBox"></span></span></strong>
                                 <span class="downArrow"><img src="assets/img/down.svg" alt=""></span>
                             </div>
                         </div>
-                        <div class="sizeFilterMobile">
+                        <div class="filterMobile">
                             <div class="view d-flex align-items-center justify-content-between" popUp="#sizePopUpMobile">
-                                <span class="whenDefaultSizeSelected">Size</span>
-                                <strong class="whenSizeSelected" style="display: none;">Size: <span class="selectedSize"></span></strong>
+                                <span class="whenDefaultSizeSelected whenDefaultSelected">Size</span>
+                                <strong class="whenSizeSelected whenSelected" style="display: none;">Size: <span class="selectedSize"></span></strong>
                                 <span class="downArrow"><img src="assets/img/down.svg" alt=""></span>
                             </div>
                         </div>
+                        <!-- <div class="filterMobile">
+                            <div class="view d-flex align-items-center justify-content-between" popUp="#heightPopUpMobile">
+                                <span class="whenDefaultHeightSelected whenDefaultSelected">Height</span>
+                                <strong class="whenHeightSelected whenSelected" style="display: none;">Height: <span class="selectedHeight"></span></strong>
+                                <span class="downArrow"><img src="assets/img/down.svg" alt=""></span>
+                            </div>
+                        </div> -->
                     </div>
                     <p class="modelHeight">Model <span>178</span> cm</p>
-                    <div class="sizeSelectContent">
-                        <p class="sizeGuide d-flex align-items-center">
+                    <div class="sizeSelectContent selectContent">
+                        <p class="sizeGuide guide d-flex align-items-center">
                             <a href="#"><img src="assets/img/size-icon-1.svg" class="rule-icon" alt=""> Size guide <img class="right-icon" src="assets/img/right-bold-black.svg" alt=""></a>
                         </p>
-                        <div class="sizeSelectContentWrapper d-flex flex-wrap">
-                            <div class="sizeBox active" size="01">
+                        <div class="sizeSelectContentWrapper selectContentWrapper d-flex flex-wrap">
+                            <div class="sizeBox selectWrapperBox" value="01">
                                 <span>01</span>
                                 <input type="radio" value="01" name="size">
                             </div>
-                            <div class="sizeBox" size="02">
+                            <div class="sizeBox selectWrapperBox" value="02">
                                 <span>02</span>
                                 <input type="radio" value="02" name="size">
                             </div>
-                            <div class="sizeBox" size="03">
+                            <div class="sizeBox selectWrapperBox" value="03">
                                 <span>03</span>
                                 <input type="radio" value="03" name="size">
                             </div>
-                            <div class="sizeBox unable" size="04">
+                            <div class="sizeBox unable selectWrapperBox" value="04">
                                 <span>04</span>
                                 <input type="radio" name="size" value="04">
                             </div>
-                            <div class="sizeBox" size="05">
+                            <div class="sizeBox selectWrapperBox" value="05">
                                 <span>05</span>
                                 <input type="radio" name="size" value="05">
                             </div>
-                            <div class="sizeBox unable" size="06">
+                            <div class="sizeBox unable selectWrapperBox" value="06">
                                 <span>06</span>
                                 <input type="radio" name="size" value="06">
                             </div>
-                            <div class="sizeBox unable" size="07">
+                            <div class="sizeBox unable selectWrapperBox" value="07">
                                 <span>07</span>
                                 <input type="radio" name="size" value="07">
                             </div>
-                            <div class="sizeBox" size="08">
+                            <div class="sizeBox selectWrapperBox" value="08">
                                 <span>08</span>
                                 <input type="radio" name="size" value="08">
                             </div>
                         </div>
                     </div>
-
-
-                    <button type="submit" class="submitForm">Add</button>
+                    <span class="sizeMustSelected" style="color: red;font-size: 12px;position: relative; top: -20px; display: none;">Size must be chosen</span>
+                    <!-- <div class="heightSelectContent SelectContent">
+                        <p class="heightGuide guide d-flex align-items-center">
+                            <a href="#"><img src="assets/img/size-icon-2.svg" class="rule-icon" alt=""> Height guide <img class="right-icon" src="assets/img/right-bold-black.svg" alt=""></a>
+                        </p>
+                        <div class="heightSelectContentWrapper selectContentWrapper d-flex flex-wrap">
+                            <div class="heightBox selectWrapperBox" value="180">
+                                <span>180</span>
+                                <input type="radio" value="180" name="height">
+                            </div>
+                            <div class="heightBox selectWrapperBox" value="182">
+                                <span>182</span>
+                                <input type="radio" value="182" name="height">
+                            </div>
+                            <div class="heightBox selectWrapperBox" value="183">
+                                <span>183</span>
+                                <input type="radio" value="183" name="height">
+                            </div>
+                            <div class="heightBox unable selectWrapperBox" value="184">
+                                <span>184</span>
+                                <input type="radio" name="height" value="184">
+                            </div>
+                            <div class="heightBox selectWrapperBox" value="185">
+                                <span>185</span>
+                                <input type="radio" name="height" value="185">
+                            </div>
+                            <div class="heightBox unable selectWrapperBox" value="186">
+                                <span>186</span>
+                                <input type="radio" name="height" value="186">
+                            </div>
+                            <div class="heightBox unable selectWrapperBox" value="187">
+                                <span>187</span>
+                                <input type="radio" name="height" value="187">
+                            </div>
+                            <div class="heightBox selectWrapperBox" value="08">
+                                <span>188</span>
+                                <input type="radio" name="height" value="188">
+                            </div>
+                        </div>
+                    </div> -->
+                    <input type="submit" id="productSaleFormSubmit" style="display: none;">
+                    <a href="#" class="submitForm addProductToChart">Add</a>
+                    <a href="#" class="submitForm addProductToChartDesktop">Add</a>
                 </form>
                 <div class="productDescription">
                     <h3 class="d-flex align-items-center justify-content-between"><span class="title">Description</span><span class="productCode">Product code <span class="code">1335531</span></span>
@@ -905,13 +953,1044 @@ Socks</span>
             </div>
         </div>
     </section>
+
+    <section id="completeYourLookDetail" class="newArrivalProducts" bcgColor="#000">
+        <h2 class="sectionTitle">
+            <span>Complete</span> your look
+        </h2>
+        <div class="swiper-newArrivals">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/complete-your-look-2.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Pack of 6 mini scrunchies</h4>
+                            <p class="priceInfo">
+                                <!-- <span class="salePrice">17.00 AZN</span> -->
+                                <span class="price">17.00 AZN</span>
+                            </p>
+                            <!-- <div class="saleInfo">
+                                <span class="sale">35%</span>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/related-items-4.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Denim shorts with frayed hems</h4>
+                            <p class="priceInfo">
+                                <!-- <span class="salePrice">17.00 AZN</span> -->
+                                <span class="price">49.00 AZN</span>
+                            </p>
+                            <!-- <div class="saleInfo">
+                                <span class="sale">35%</span>
+                            </div> -->
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="newArrivals-next next-prev-buttons">
+                <img src="assets/img/right-white.svg" alt="">
+            </div>
+            <div class="newArrivals-prev next-prev-buttons">
+                <img src="assets/img/left-white.svg" alt="">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section id="newArrivalProductsDetail" class="newArrivalProducts" bcgColor="#000">
+        <h2 class="sectionTitle">
+            <span>Recently</span> viewed products
+        </h2>
+        <div class="swiper-newArrivals">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-1.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Voluminous textured panel dress</h4>
+                            <p class="priceInfo">
+                                <span class="salePrice">29.00 AZN</span>
+                                <span class="price">45.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">35%</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-2.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Midi dress with ruffles and drawstring</h4>
+                            <p class="priceInfo">
+                                <span class="price">45.00 AZN</span>
+                            </p>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-3.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Panelled baby-doll dress with embroidery</h4>
+                            <p class="priceInfo">
+                                <span class="salePrice">32.00 AZN</span>
+                                <span class="price">42.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">25%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-4.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Mickey Mouse floral print T-shirt</h4>
+                            <p class="priceInfo">
+                                <span class="salePrice">42.00 AZN</span>
+                                <span class="price">64.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">20%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-5.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Faded sweatshirt with contrast print</h4>
+                            <p class="priceInfo">
+                                <span class="price">54.00 AZN</span>
+                            </p>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-6.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Midi dress with ruffles and drawstring</h4>
+                            <p class="priceInfo">
+                                <span class="salePrice">30.00 AZN</span>
+                                <span class="price">33.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">10%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/woman-product-7.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Faux leather dress with gathered shoulders</h4>
+                            <p class="priceInfo">
+                                <span class="salePrice">32.00 AZN</span>
+                                <span class="price">42.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">25%</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="newArrivals-next next-prev-buttons">
+                <img src="assets/img/right-white.svg" alt="">
+            </div>
+            <div class="newArrivals-prev next-prev-buttons">
+                <img src="assets/img/left-white.svg" alt="">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section id="relatedItemsDetail" class="newArrivalProducts" bcgColor="#000">
+        <h2 class="sectionTitle">
+            <span>Related</span> items
+        </h2>
+        <div class="swiper-newArrivals">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/related-items-1.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Voluminous textured panel dress</h4>
+                            <p class="priceInfo">
+                                <span class="price">45.00 AZN</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/related-items-2.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Midi dress with ruffles and drawstring</h4>
+                            <p class="priceInfo">
+                                <span class="price">45.00 AZN</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/related-items-3.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Panelled baby-doll dress with embroidery</h4>
+                            <p class="priceInfo">
+                                <span class="salePrice">32.00 AZN</span>
+                                <span class="price">42.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">25%</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/related-items-5.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Mickey Mouse floral print T-shirt</h4>
+                            <p class="priceInfo">
+                                <span class="salePrice">42.00 AZN</span>
+                                <span class="price">64.00 AZN</span>
+                            </p>
+                            <div class="saleInfo">
+                                <span class="sale">20%</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a class="link" href="#">
+                        <div class="imgSection">
+                            <img src="assets/img/related-items-6.jpg" alt="">
+                        </div>
+                        <div class="productInfo">
+                            <h4>Faded sweatshirt with contrast print</h4>
+                            <p class="priceInfo">
+                                <span class="price">54.00 AZN</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="newArrivals-next next-prev-buttons">
+                <img src="assets/img/right-white.svg" alt="">
+            </div>
+            <div class="newArrivals-prev next-prev-buttons">
+                <img src="assets/img/left-white.svg" alt="">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-scrollbar"></div>
+        </div>
+    </section>
+    <section id="moreProducts" class="allProducts" bcgColor="#000">
+        <h2 class="sectionTitle">
+            <span>More</span> Dresses
+        </h2>
+        <div class="allProductsContent d-flex flex-wrap">
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="/productDetail.html" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-11.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-11.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/8/329/805/5238329805_4_1_8.jpg?t=1584470325731&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/329/805/529805_4_1_8.jpg?t=1584470325731&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-11.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-11.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/329/805/5238329805_2_2_8.jpg?t=1584470309307&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/329/805/5238329805_2_2_8.jpg?t=1584470309307&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #fff; color: #313131; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; letter-spacing: 2px; font-weight: 500; font-variant: small-caps; font-style: italic; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>30</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="productDetail.html">Ruffled fabric top with Swiss embroidery</a></h4>
+                        <span class="price">
+                    32.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 3 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:teal"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:white"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:brown"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-12.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-12.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_4_1_8.jpg?t=1588885212288&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_4_1_8.jpg?t=1588885212288&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-12.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-12.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_2_2_8.jpg?t=1588885190660&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/250/5238370250_2_2_8.jpg?t=1588885190660&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>32</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Ruffled fabric top with Swiss embroidery</a></h4>
+                        <span class="price">
+                    31.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 1 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:rebeccapurple"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:coral"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-13.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-13.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_4_1_8.jpg?t=1588885246586&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_4_1_8.jpg?t=1588885246586&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-13.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-13.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_2_2_8.jpg?t=1588885222863&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/370/800/5238370800_2_2_8.jpg?t=1588885222863&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>31</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Asymmetric smocked top</a></h4>
+                        <span class="price">
+                        56.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 3 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:black"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:white"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:fuchsia"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-15.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-15.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_5_8.jpg?t=1585067212637&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_5_8.jpg?t=1585067212637&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-15.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-15.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_2_8.jpg?t=1585068205579&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5234/369/800/5234369800_2_2_8.jpg?t=1585068205579&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>32</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>33</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Basic wide ribbed T-shirt</a></h4>
+                        <span class="price">
+                    62.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 4 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:navajowhite"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:mediumaquamarine"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:wheat"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:azure"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-5.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-5.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_4_1_8.jpg?t=1584001010122&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_4_1_8.jpg?t=1584001010122&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-5.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-5.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_2_2_8.jpg?t=1584000956530&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/306/805/5238306805_2_2_8.jpg?t=1584000956530&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>32</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>33</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>34</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        54.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:red"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:teal"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-16.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-16.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_4_1_8.jpg?t=1584974698999&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_4_1_8.jpg?t=1584974698999&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-16.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-16.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_2_2_8.jpg?t=1584974679449&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/327/250/5238327250_2_2_8.jpg?t=1584974679449&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>31</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        57.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:bisque"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:navajowhite"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:azure"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-1.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-1.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_4_1_8.jpg?t=1589210915516&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_4_1_8.jpg?t=1589210915516&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-1.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-1.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_2_2_8.jpg?t=1589210894006&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/I/0/1/p/5238/374/612/5238374612_2_2_8.jpg?t=1589210894006&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>31</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        51.99&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:black"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:yellow"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-2.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-2.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_4_1_8.jpg?t=1588879088867&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_4_1_8.jpg?t=1588879088867&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-2.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-2.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_2_2_8.jpg?t=1588879063306&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/346/250/5238346250_2_2_8.jpg?t=1588879063306&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #fff; color: #313131; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; letter-spacing: 2px; font-weight: 500; font-variant: small-caps; font-style: italic; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>28</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>30</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                    55.00&nbsp;AZN
+                  </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:wheat"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:azure"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-3.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-3.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_4_1_8.jpg?t=1583860246727&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_4_1_8.jpg?t=1583860246727&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-3.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-3.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_2_2_8.jpg?t=1583860195142&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5236/311/800/5236311800_2_2_8.jpg?t=1583860195142&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                                <span style="background-color: #b3e9cf; color: #fff; display: inline-block; padding: 3px 7px; font-stretch: ultra-expanded; word-spacing: 3px; letter-spacing: 1.5px; font-weight: 600; font-variant: small-caps; font-style: oblique; margin-right: 5px; text-transform: uppercase; font-size: 10px;">Flared</span>
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>1</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>2</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>3</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        49.99&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:blueviolet"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:aqua"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product item4" href="#">
+                <div class="productContent ">
+                    <div class="imgContent blur">
+                        <a href="#" class="productDetail">
+                            <picture class="frontPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-4.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-4.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_4_1_8.jpg?t=1584001230216&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_4_1_8.jpg?t=1584001230216&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                            <picture class="backPicture">
+                                <source type="image/webp" srcset="assets/img/woman-trousers-cover-4.webp" />
+                                <source type="image/jpg" srcset="assets/img/woman-trousers-cover-4.jpg" />
+                                <source type="image/jpg" srcset="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_2_2_8.jpg?t=1584001198065&imwidth=1100" loaded="true" />
+                                <img data-src="https://static.pullandbear.net/2/photos//2020/V/0/1/p/5238/356/250/5238356250_2_2_8.jpg?t=1584001198065&imwidth=1100" class=" unloadedImage" alt="">
+                            </picture>
+                        </a>
+                        <div class="favoritesButton">
+                            <img src="assets/img/favorite-simple.svg" class="simple" alt="">
+                            <img src="assets/img/favorite-hover.svg" class="hover" alt="">
+                            <img src="assets/img/favorite-active.svg" class="selected" alt="">
+                        </div>
+                        <div class="imgContentBottom">
+                            <div class="collections">
+                            </div>
+                            <div class="sizeContent">
+                                <ul class="sizeSelect">
+                                    <li class="default d-flex justify-content-between align-items-center"><span>Size</span><img src="assets/img/down-bold-black.svg" alt=""></li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>29</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center ">
+                                        <span>30</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>31</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>32</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center unable">
+                                        <span>33</span>
+                                    </li>
+                                    <li class="d-flex justify-content-start align-items-center">
+                                        <span>34</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="productInfo blur">
+                        <h4><a href="#">Linen trousers with elastic waistband</a></h4>
+                        <span class="price">
+                        54.00&nbsp;AZN
+                      </span>
+                        <div class="colors">
+                            <p>
+                                + 2 Colours
+                            </p>
+                            <ul class="d-flex justify-content-end justify-content-lg-center align-items-center">
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:red"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:teal"></span>
+                                </li>
+                                <li class="colorContent d-flex justify-content-center align-items-center">
+                                    <span class="color-box" style="background-color:chocolate"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="loadContent d-flex justify-content-center align-items-center">
+                        <div class="loading d-flex justify-content-center align-items-center">
+                            <span>Loading...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="productBottomInfoDesktop" class="d-lg-flex align-items-lg-center justify-content-lg-between">
         <div class="title">
             <span>Sleeveless ribbed top</span>
             <strong>11.00 AZ</strong>
         </div>
         <div class="filter d-flex align-items-center">
-            <div class="colorFilter">
+            <div class="colorFilter filter-type-js">
                 <!-- if color more ehan one "justify-content-between" otherwise "justify-content-center" -->
                 <!-- <div class="view d-flex align-items-center justify-content-center">
                     <div class="oneColor d-flex align-items-center">
@@ -925,14 +2004,14 @@ Socks</span>
                     <!-- max 4 li -->
                     <ul class="d-flex flex-nowrap">
                         <li class="d-flex align-items-center justify-content-center viewColor" color="bisque"><span style="background-color: bisque;"></span></li>
-                        <li class="d-flex align-items-center justify-content-center viewColor active" color="rebeccapurple"><span style="background-color: rebeccapurple;"></span></li>
+                        <li class="d-flex align-items-center justify-content-center viewColor" color="rebeccapurple"><span style="background-color: rebeccapurple;"></span></li>
                         <li class="d-flex align-items-center justify-content-center viewColor unable" color="gray"><span style="background-color: gray;"></span></li>
                         <li class="d-flex align-items-center justify-content-center viewColor" color="cadetblue"><span style="background-color: cadetblue;"></span></li>
                     </ul>
                     <span class="plus">+</span>
                 </div>
-                <div class="popup">
-                    <div class="content">
+                <div class="popupDesktop">
+                    <div class="contentDesktop">
                         <ul class="availableColors">
                             <li class="availableColor d-flex align-items-center" color="bisque">
                                 <div class="colorBox d-flex align-items-center justify-content-center">
@@ -982,37 +2061,37 @@ Socks</span>
                     <div class="arrow"></div>
                 </div>
             </div>
-            <div class="sizeFilter">
+            <div class="sizeFilter filter-type filter-type-js">
                 <div class="view d-flex align-items-center justify-content-between">
-                    <span class="whenDefaultSizeSelected">Size</span>
-                    <strong class="whenSizeSelected" style="display: none;">Size: <span class="selectedSize"></span></strong>
+                    <span class="whenDefaultSizeSelected whenDefaultSelected">Size</span>
+                    <strong class="whenSizeSelected whenSelected" style="display: none;">Size: <span class="selectedSize"></span></strong>
                     <span class="downArrow"><img src="assets/img/down.svg" alt=""></span>
                 </div>
-                <div class="popup">
-                    <div class="content">
-                        <ul class="availableSizes">
-                            <li class="availableSize d-flex align-items-center" size="01">
+                <div class="popupDesktop">
+                    <div class="contentDesktop">
+                        <ul class="availableSizes availableCategories">
+                            <li class="availableSize availableCategory d-flex align-items-center" size="01">
                                 <strong>01</strong>
                             </li>
-                            <li class="availableSize d-flex align-items-center active" size="02">
+                            <li class="availableSize availableCategory d-flex align-items-center active" size="02">
                                 <strong>02</strong>
                             </li>
-                            <li class="availableSize d-flex align-items-center" size="03">
+                            <li class="availableSize availableCategory d-flex align-items-center" size="03">
                                 <strong>03</strong>
                             </li>
-                            <li class="availableSize d-flex align-items-center stockout" size="04">
+                            <li class="availableSize availableCategory d-flex align-items-center stockout" size="04">
                                 <strong>04</strong>
                             </li>
-                            <li class="availableSize d-flex align-items-center " size="05">
+                            <li class="availableSize availableCategory d-flex align-items-center " size="05">
                                 <strong>05</strong>
                             </li>
-                            <li class="availableSize d-flex align-items-center stockout" size="06">
+                            <li class="availableSize availableCategory d-flex align-items-center stockout" size="06">
                                 <strong>06</strong>
                             </li>
-                            <li class="availableSize d-flex align-items-center stockout" size="07">
+                            <li class="availableSize availableCategory d-flex align-items-center stockout" size="07">
                                 <strong>07</strong>
                             </li>
-                            <li class="availableSize d-flex align-items-center " size="08">
+                            <li class="availableSize availableCategory d-flex align-items-center " size="08">
                                 <strong>08</strong>
                             </li>
                         </ul>
@@ -1021,6 +2100,45 @@ Socks</span>
                     <div class="arrow"></div>
                 </div>
             </div>
+            <!-- <div class="heightFilter filter-type filter-type-js">
+                <div class="view d-flex align-items-center justify-content-between">
+                    <span class="whenDefaultHeightSelected whenDefaultSelected">Height</span>
+                    <strong class="whenHeightSelected whenSelected" style="display: none;">Height: <span class="selectedHeight"></span></strong>
+                    <span class="downArrow"><img src="assets/img/down.svg" alt=""></span>
+                </div>
+                <div class="popupDesktop">
+                    <div class="contentDesktop">
+                        <ul class="availableHeights availableCategories">
+                            <li class="availableHeight availableCategory d-flex align-items-center" value="180">
+                                <strong>180</strong>
+                            </li>
+                            <li class="availableHeight availableCategory d-flex align-items-center active" value="182">
+                                <strong>182</strong>
+                            </li>
+                            <li class="availableHeight availableCategory d-flex align-items-center" value="183">
+                                <strong>183</strong>
+                            </li>
+                            <li class="availableHeight availableCategory d-flex align-items-center stockout" value="184">
+                                <strong>184</strong>
+                            </li>
+                            <li class="availableHeight availableCategory d-flex align-items-center " value="185">
+                                <strong>185</strong>
+                            </li>
+                            <li class="availableHeight availableCategory d-flex align-items-center stockout" value="186">
+                                <strong>186</strong>
+                            </li>
+                            <li class="availableHeight availableCategory d-flex align-items-center stockout" value="187">
+                                <strong>187</strong>
+                            </li>
+                            <li class="availableHeight availableCategory d-flex align-items-center " value="188">
+                                <strong>188</strong>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bridge"></div>
+                    <div class="arrow"></div>
+                </div>
+            </div> -->
         </div>
     </section>
     <section id="productBottomInfoMobile" class="d-flex d-lg-none align-items-center justify-content-between">
@@ -1043,7 +2161,7 @@ Socks</span>
                         </div>
                         <strong>Bisque</strong>
                     </li>
-                    <li class="popUpColor d-flex align-items-center active" color="rebeccapurple">
+                    <li class="popUpColor d-flex align-items-center" color="rebeccapurple">
                         <div class="popUpcolorBox d-flex align-items-center justify-content-center">
                             <span style="background-color: rebeccapurple;"></span>
                         </div>
@@ -1084,37 +2202,69 @@ Socks</span>
         </div>
     </section>
     <section id="sizePopUpMobile" class="filterMobilePopUps">
-        <div class="popup">
-            <div class="content">
-                <ul class="popUpMobileSizes">
-                    <li class="popUpSize d-flex align-items-center" size="01">
+        <div class="popup popupCommon">
+            <div class="content contentCommon">
+                <ul class="popUpUl popUpMobileSizes">
+                    <li class="popUpLi popUpSize d-flex align-items-center" value="01">
                         <strong>01</strong>
                     </li>
-                    <li class="popUpSize d-flex align-items-center active" size="02">
+                    <li class="popUpLi popUpSize d-flex align-items-center" value="02">
                         <strong>02</strong>
                     </li>
-                    <li class="popUpSize d-flex align-items-center" size="03">
+                    <li class="popUpLi popUpSize d-flex align-items-center" value="03">
                         <strong>03</strong>
                     </li>
-                    <li class="popUpSize d-flex align-items-center stockout" size="04">
+                    <li class="popUpLi popUpSize d-flex align-items-center stockout" value="04">
                         <strong>04</strong>
                     </li>
-                    <li class="popUpSize d-flex align-items-center " size="05">
+                    <li class="popUpLi popUpSize d-flex align-items-center " value="05">
                         <strong>05</strong>
                     </li>
-                    <li class="popUpSize d-flex align-items-center stockout" size="06">
+                    <li class="popUpLi popUpSize d-flex align-items-center stockout" value="06">
                         <strong>06</strong>
                     </li>
-                    <li class="popUpSize d-flex align-items-center stockout" size="07">
+                    <li class="popUpLi popUpSize d-flex align-items-center stockout" value="07">
                         <strong>07</strong>
                     </li>
-                    <li class="popUpSize d-flex align-items-center " size="08">
+                    <li class="popUpLi popUpSize d-flex align-items-center " value="08">
                         <strong>08</strong>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
+    <!-- <section id="heightPopUpMobile" class="filterMobilePopUps">
+        <div class="popup popupCommon">
+            <div class="content contentCommon">
+                <ul class="popUpUl popUpMobileHeights">
+                    <li class="popUpLi popUpHeight d-flex align-items-center" value="180">
+                        <strong>180</strong>
+                    </li>
+                    <li class="popUpLi popUpHeight d-flex align-items-center" value="182">
+                        <strong>182</strong>
+                    </li>
+                    <li class="popUpLi popUpHeight d-flex align-items-center" value="183">
+                        <strong>183</strong>
+                    </li>
+                    <li class="popUpLi popUpHeight d-flex align-items-center stockout" value="184">
+                        <strong>184</strong>
+                    </li>
+                    <li class="popUpLi popUpHeight d-flex align-items-center " value="185">
+                        <strong>185</strong>
+                    </li>
+                    <li class="popUpLi popUpHeight d-flex align-items-center stockout" value="186">
+                        <strong>186</strong>
+                    </li>
+                    <li class="popUpLi popUpHeight d-flex align-items-center stockout" value="187">
+                        <strong>187</strong>
+                    </li>
+                    <li class="popUpLi popUpHeight d-flex align-items-center " value="188">
+                        <strong>188</strong>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section> -->
     <section id="subscribe" bcgColor="#000">
         <div class="top">
             <img src="assets/img/newslater.jpg" alt="">
@@ -1327,6 +2477,19 @@ Socks</span>
 
 
     <script>
+        var selectedInputNames = [{
+            name: "size",
+            mobilePopUp: "#sizePopUpMobile",
+            errorMessage: ".sizeMustSelected"
+        }, {
+            name: "color",
+            mobilePopUp: "#colorPopUpMobile",
+            errorMessage: ".colorMustSelected"
+        }];
+        // , {
+        //     name: "height",
+        //     mobilePopUp: "#heightPopUpMobile",
+        // }
         var IconsColorAndImageRelation = [{
             color: "#000",
             leftArrowSrc: "assets/img/left-bold-black.svg",
@@ -1391,7 +2554,7 @@ Socks</span>
     <script src="js/lazyLoad.js"></script>
 
     <script>
-        //SelectColor
+        //colorSelect
         $(".availableColor").click(function() {
             if ($(this).hasClass("unable")) {
                 return;
@@ -1412,10 +2575,7 @@ Socks</span>
                     }
                 }
 
-                var inputElement = $(".productSaleForm .colorSelectContent .colorBox input[value='" + selectedColor + "']");
-                $(inputElement).prop("checked", true);
-                $(".colorBox").removeClass("active");
-                $(inputElement).parent().addClass("active");
+                checkInput(".productSaleForm .colorSelectContent .colorBox input[value='" + selectedColor + "']", ".colorBox");
 
                 if (!viewColorFinded) {
                     $(".viewColor").removeClass("active");
@@ -1426,12 +2586,8 @@ Socks</span>
                     $($(".viewColor")[0]).attr("color", selectedColor);
                 }
 
-                $(".popup").fadeOut("fast", function() {
-                    COLORPOPUPOPENED = false;
-                });
+
             }
-
-
         });
         $(".viewColor").click(function() {
             if ($(this).hasClass("unable")) {
@@ -1443,18 +2599,13 @@ Socks</span>
                 $(this).addClass("active");
                 let selectedColor = $(this).attr("color");
 
-                var inputElement = $(".productSaleForm .colorSelectContent .colorBox input[value='" + selectedColor + "']");
-                $(inputElement).prop("checked", true);
-                $(".colorBox").removeClass("active");
-                $(inputElement).parent().addClass("active");
+                checkInput(".productSaleForm .colorSelectContent .colorBox input[value='" + selectedColor + "']", ".colorBox");
 
                 for (let color of $(".availableColor")) {
                     if ($(color).attr("color") == selectedColor) {
                         $(".availableColor").removeClass("active");
                         $(color).addClass("active");
-                        $(".popup").fadeOut("fast", function() {
-                            COLORPOPUPOPENED = false;
-                        });
+                        $(".popupDesktop").fadeOut("fast");
                         break;
                     }
                 }
@@ -1462,6 +2613,83 @@ Socks</span>
 
 
         });
+        $(".popUpColor").click(function() {
+            if ($(this).hasClass("unable")) {
+                return;
+            }
+
+            if (!$(this).hasClass("active")) {
+                $(".popUpColor").removeClass("active");
+                $(this).addClass("active");
+                let selectedColor = $(this).attr("color");
+
+                // let viewColorFinded = false;
+                // for (let color of $(".viewColor")) {
+                //     if ($(color).attr("color") == selectedColor) {
+                //         $(".viewColor").removeClass("active");
+                //         $(color).addClass("active");
+                //         viewColorFinded = true;
+                //         break;
+                //     }
+                // }
+                $(".whenDefaultColorSelected").css({
+                    "display": "none"
+                });
+                $(".whenColorSelected .selectedColor").attr("color", selectedColor).children("span").css({
+                    "background-color": selectedColor
+                });
+                $(".whenColorSelected").css({
+                    display: "block"
+                });
+
+                checkInput(".productSaleForm .colorSelectContent .colorBox input[value='" + selectedColor + "']", ".colorBox");
+
+                closeFilterPopUp();
+                // if (!viewColorFinded) {
+                //     $(".viewColor").removeClass("active");
+                //     $($(".viewColor")[0]).addClass("active");
+                //     $($(".viewColor")[0]).children("span").css({
+                //         "background-color": selectedColor
+                //     });
+                //     $($(".viewColor")[0]).attr("color", selectedColor);
+                // }
+
+                // $(".popup").fadeOut("fast");
+            }
+        });
+        $(".productSaleForm .colorSelectContent .colorBox").click(function() {
+                if ($(this).hasClass("unable"))
+                    return;
+
+                let color = $(this).children("input").val();
+
+                for (let avColor of $(".availableColor")) {
+                    if ($(avColor).attr("color") == color) {
+                        $(".availableColor").removeClass("active");
+                        $(avColor).addClass("active");
+                    }
+                }
+                let viewColorFinded = false;
+                for (let vColor of $(".viewColor")) {
+                    if ($(vColor).attr("color") == color) {
+                        $(".viewColor").removeClass("active");
+                        $(vColor).addClass("active");
+                        viewColorFinded = true;
+                        break;
+                    }
+                }
+                if (!viewColorFinded) {
+                    $(".viewColor").removeClass("active");
+                    $($(".viewColor")[0]).addClass("active");
+                    $($(".viewColor")[0]).children("span").css({
+                        "background-color": color
+                    });
+                    $($(".viewColor")[0]).attr("color", color);
+                }
+                checkInput(".productSaleForm .colorSelectContent .colorBox input[value='" + color + "']", ".colorBox");
+
+            })
+            //sizeSelect
         $(".availableSize").click(function() {
             if (!$(this).hasClass("active") && !$(this).hasClass("stockout")) {
                 $(".availableSize").removeClass("active");
@@ -1475,18 +2703,14 @@ Socks</span>
                     display: "block"
                 });
 
-                var inputElement = $(".productSaleForm .sizeSelectContent .sizeSelectContentWrapper .sizeBox input[value='" + selectedSize + "']");
-                $(inputElement).prop("checked", true);
-                $(".sizeBox").removeClass("active");
-                $(inputElement).parent().addClass("active");
-
+                checkInput(".productSaleForm .sizeSelectContent .sizeSelectContentWrapper .sizeBox input[value='" + selectedSize + "']", ".sizeBox");
             }
         });
         $(".popUpSize").click(function() {
             if (!$(this).hasClass("active") && !$(this).hasClass("stockout")) {
                 $(".popUpSize").removeClass("active");
                 $(this).addClass("active");
-                let selectedSize = $(this).attr("size");
+                let selectedSize = $(this).attr("value");
                 $(".whenDefaultSizeSelected").css({
                     "display": "none"
                 });
@@ -1494,139 +2718,145 @@ Socks</span>
                 $(".whenSizeSelected").css({
                     display: "block"
                 });
-
-                var inputElement = $(".productSaleForm .sizeSelectContent .sizeSelectContentWrapper .sizeBox input[value='" + selectedSize + "']");
-                $(inputElement).prop("checked", true);
-                $(".sizeBox").removeClass("active");
-                $(inputElement).parent().addClass("active");
-                console.log($(inputElement).val());
-
+                checkInput(".productSaleForm .sizeSelectContent .sizeSelectContentWrapper .sizeBox input[value='" + selectedSize + "']", ".sizeBox");
                 closeFilterPopUp();
             }
         })
-        $(".productSaleForm .colorSelectContent .colorBox").click(function() {
-            if ($(this).hasClass("unable"))
-                return;
-
-            $(".colorBox").removeClass("active");
-            $(this).addClass("active");
-            $(this).children("input").prop("checked", true);
-
-            let color = $(this).children("input").val();
-
-            for (let avColor of $(".availableColor")) {
-                if ($(avColor).attr("color") == color) {
-                    $(".availableColor").removeClass("active");
-                    $(avColor).addClass("active");
-                }
-            }
-            let viewColorFinded = false;
-            for (let vColor of $(".viewColor")) {
-                if ($(vColor).attr("color") == color) {
-                    $(".viewColor").removeClass("active");
-                    $(vColor).addClass("active");
-                    viewColorFinded = true;
-                    break;
-                }
-            }
-            if (!viewColorFinded) {
-                $(".viewColor").removeClass("active");
-                $($(".viewColor")[0]).addClass("active");
-                $($(".viewColor")[0]).children("span").css({
-                    "background-color": color
-                });
-                $($(".viewColor")[0]).attr("color", color);
-            }
-
-        })
-        $('input[type=radio][name=color]').change(function() {
-            if ($(this).parent().hasClass("unable"))
-                return;
-
-            $(".colorBox").removeClass("active");
-            $(this).parent().addClass("active");
-
-            let color = $(this).val();
-            console.log(color);
-
-            for (let avColor of $(".availableColor")) {
-                if ($(avColor).attr("color") == color) {
-                    $(".availableColor").removeClass("active");
-                    $(avColor).addClass("active");
-                }
-            }
-            let viewColorFinded = false;
-            for (let vColor of $(".viewColor")) {
-                if ($(vColor).attr("color") == color) {
-                    $(".viewColor").removeClass("active");
-                    $(vColor).addClass("active");
-                    viewColorFinded = true;
-                    break;
-                }
-            }
-            if (!viewColorFinded) {
-                $(".viewColor").removeClass("active");
-                $($(".viewColor")[0]).addClass("active");
-                $($(".viewColor")[0]).children("span").css({
-                    "background-color": color
-                });
-                $($(".viewColor")[0]).attr("color", color);
-            }
-        });
         $(".productSaleForm .sizeSelectContent .sizeSelectContentWrapper .sizeBox").click(function() {
-            if ($(this).hasClass("unable"))
-                return;
+                if ($(this).hasClass("unable"))
+                    return;
+                let size = $(this).children("input").val();
 
-            $(".sizeBox").removeClass("active");
-            $(this).addClass("active");
-            $(this).children("input").prop("checked", true);
+                for (let avsize of $(".availableSize")) {
+                    if ($(avsize).attr("size") == size) {
+                        $(".availableSize").removeClass("active");
+                        $(avsize).addClass("active");
 
-            let size = $(this).children("input").val();
-            for (let avsize of $(".availableSize")) {
-                if ($(avsize).attr("size") == size) {
-                    $(".availableSize").removeClass("active");
-                    $(avsize).addClass("active");
-
-                    $(".whenDefaultSizeSelected").css({
-                        "display": "none"
-                    });
-                    $(".whenSizeSelected .selectedSize").text(size);
-                    $(".whenSizeSelected").css({
-                        display: "block"
-                    });
+                        $(".whenDefaultSizeSelected").css({
+                            "display": "none"
+                        });
+                        $(".whenSizeSelected .selectedSize").text(size);
+                        $(".whenSizeSelected").css({
+                            display: "block"
+                        });
+                    }
                 }
-            }
-        })
-        $('input[type=radio][name=size]').change(function() {
-            if ($(this).parent().hasClass("unable"))
-                return;
+                checkInput(".productSaleForm .sizeSelectContent .sizeSelectContentWrapper .sizeBox input[value='" + size + "']", ".sizeBox");
+            })
+            //HeightSelect
+            // $(".availableHeight").click(function() {
+            //     if (!$(this).hasClass("active") && !$(this).hasClass("stockout")) {
+            //         $(".availableHeight").removeClass("active");
+            //         $(this).addClass("active");
+            //         let selectedValue = $(this).attr("value");
+            //         $(".whenDefaultHeightSelected").css({
+            //             "display": "none"
+            //         });
+            //         $(".whenHeightSelected .selectedHeight").text(selectedValue);
+            //         $(".whenHeightSelected").css({
+            //             display: "block"
+            //         });
 
-            $(".sizeBox").removeClass("active");
-            $(this).parent().addClass("active");
+        //         checkInput(".productSaleForm .heightBox input[value='" + selectedValue + "']", ".heightBox");
+        //     }
+        // });
+        // $(".popUpHeight").click(function() {
+        //     if (!$(this).hasClass("active") && !$(this).hasClass("stockout")) {
+        //         $(".popUpHeight").removeClass("active");
+        //         $(this).addClass("active");
+        //         let selectedSize = $(this).attr("value");
+        //         $(".whenDefaultHeightSelected").css({
+        //             "display": "none"
+        //         });
+        //         $(".whenHeightSelected .selectedHeight").text(selectedSize);
+        //         $(".whenHeightSelected").css({
+        //             display: "block"
+        //         });
+        //         checkInput(".productSaleForm .heightBox input[value='" + selectedSize + "']", ".heightBox");
+        //         closeFilterPopUp();
+        //     }
+        // })
+        // $(".productSaleForm .heightBox").click(function() {
+        //     if ($(this).hasClass("unable"))
+        //         return;
+        //     let size = $(this).children("input").val();
 
-            let size = $(this).val();
-            console.log(size);
-            for (let avsize of $(".availableSize")) {
-                if ($(avsize).attr("size") == size) {
-                    $(".availableSize").removeClass("active");
-                    $(avsize).addClass("active");
+        //     for (let avsize of $(".availableHeight")) {
+        //         if ($(avsize).attr("size") == size) {
+        //             $(".availableHeight").removeClass("active");
+        //             $(avsize).addClass("active");
 
-                    $(".whenDefaultSizeSelected").css({
-                        "display": "none"
-                    });
-                    $(".whenSizeSelected .selectedSize").text(size);
-                    $(".whenSizeSelected").css({
-                        display: "block"
-                    });
-                }
-            }
-        });
+        //             $(".whenDefaultHeightSelected").css({
+        //                 "display": "none"
+        //             });
+        //             $(".whenHeightSelected .selectedHeight").text(size);
+        //             $(".whenHeightSelected").css({
+        //                 display: "block"
+        //             });
+        //         }
+        //     }
+        //     checkInput(".productSaleForm .heightBox input[value='" + size + "']", ".heightBox");
+        // })
+
         $(".favoritesButton").click(function() {
             if ($(this).hasClass("active"))
                 $(this).removeClass("active");
             else
                 $(this).addClass("active");
         });
+        $(".addProductToChart").click(function(e) {
+            e.preventDefault();
+            let obj = checkIfAllOptionsSelected();
+            console.log(obj);
+            if (obj) {
+                openPopUp(obj.mobilePopUp);
+            } else {
+                var form = document.getElementById("productSaleForm");
+                form.submit();
+            }
+        })
+        $(".addProductToChartDesktop").click(function(e) {
+            e.preventDefault();
+            let obj = checkIfAllOptionsSelected();
+
+            if (obj) {
+                $(obj.errorMessage).fadeIn("fast");
+            } else {
+                var form = document.getElementById("productSaleForm");
+                form.submit();
+            }
+        })
+
+        function checkInput(inputQuery, activatedElementQuery) {
+            var inputElement = $(inputQuery);
+            $(inputElement).prop("checked", true);
+            $(activatedElementQuery).removeClass("active");
+            $(inputElement).parent().addClass("active");
+            checkIfAllOptionsSelected();
+        }
+
+        function checkIfAllOptionsSelected() {
+            let notSelectedObj;
+            selectedInputNames.forEach(obj => {
+                if ($('input[type=radio][name="' + obj.name + '"]:checked').length == 0)
+                    notSelectedObj = obj;
+                else {
+                    $(obj.errorMessage).fadeOut("fast");
+                }
+            });
+            console.log(notSelectedObj);
+            if (!notSelectedObj) {
+                $(".addProductToChart").addClass("active").css({
+                    "background-color": "#5cc89c",
+                    "border": "1px solid #5cc89c"
+                });
+                $(".addProductToChartDesktop").addClass("active").css({
+                    "background-color": "#5cc89c",
+                    "border": "1px solid #5cc89c"
+                });
+            }
+            return notSelectedObj;
+        }
     </script>
     <!-- <script src="js/scripts.js"></script> -->
 </body>

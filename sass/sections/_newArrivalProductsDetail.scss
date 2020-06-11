@@ -1,0 +1,100 @@
+@media (max-width: $mobilePhones) {
+    #newArrivalProductsDetail {
+        background-color: #f9f9f9;
+        .sectionTitle {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .swiper-newArrivals {
+            width: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .imgSection {
+                        img {}
+                    }
+                    .productInfo {
+                        .productTitle {}
+                        .priceInfo {
+                            .salePrice {}
+                            .price {}
+                        }
+                        .saleInfo {
+                            .sale {}
+                        }
+                    }
+                }
+            }
+            .next-prev-buttons {}
+        }
+    }
+}
+
+@media (min-width: $mobilePhones) {
+    #newArrivalProductsDetail {
+        background-color: #f9f9f9;
+        .sectionTitle {
+            width: 100%;
+            margin-bottom: 25px;
+        }
+        .swiper-newArrivals {
+            width: 100%;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .imgSection {
+                        img {}
+                    }
+                    .productInfo {
+                        .productTitle {}
+                        .priceInfo {
+                            .salePrice {}
+                            .price {}
+                        }
+                        .saleInfo {
+                            .sale {}
+                        }
+                    }
+                }
+            }
+            .next-prev-buttons {}
+        }
+    }
+}
+
+@media (min-width: $tablets) {}
+
+@media (min-width: $laptops) {
+    #newArrivalProductsDetail {
+        background-color: #f9f9f9;
+        .sectionTitle {
+            width: 90%;
+            margin: 25px auto;
+        }
+        .swiper-newArrivals {
+            overflow-x: hidden;
+            width: 90%;
+            margin: 0 auto;
+            .swiper-wrapper {
+                .swiper-slide {
+                    .imgSection {
+                        img {}
+                    }
+                    .productInfo {
+                        .productTitle {}
+                        .priceInfo {
+                            .salePrice {}
+                            .price {}
+                        }
+                        .saleInfo {
+                            .sale {}
+                        }
+                    }
+                }
+            }
+            .next-prev-buttons {}
+        }
+    }
+}
+
+@media (min-width: $desktops) {}
+
+@media (min-width: $desktopsLarge) {}

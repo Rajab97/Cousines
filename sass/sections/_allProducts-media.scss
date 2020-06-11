@@ -1,5 +1,5 @@
 @media (max-width: $mobilePhones) {
-    #allProducts {
+    .allProducts {
         .allProductsContent {
             .product {
                 margin-bottom: 15px;
@@ -97,7 +97,7 @@
 }
 
 @media (min-width: $mobilePhones) {
-    #allProducts {
+    .allProducts {
         .allProductsContent {
             padding: 0px 0px;
             .product {
@@ -203,7 +203,7 @@
 }
 
 @media (min-width: $tablets) {
-    #allProducts {
+    .allProducts {
         .allProductsContent {
             padding: 0px 0px;
             .product {
@@ -292,7 +292,7 @@
 }
 
 @media (min-width: $laptops) {
-    #allProducts {
+    .allProducts {
         &.active {
             .allProductsContent {
                 .product {
@@ -457,7 +457,7 @@
 }
 
 @media (min-width: $desktops) {
-    #allProducts {
+    .allProducts {
         .allProductsContent {
             .product {
                 &.item4 {
@@ -551,7 +551,7 @@
 }
 
 @media (min-width: $desktopsLarge) {
-    #allProducts {
+    .allProducts {
         .allProductsContent {
             padding: 0px 100px;
             .product {

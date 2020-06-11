@@ -25,7 +25,7 @@
 }
 
 .sectionTitle {
-    @include font-size($mobilePhones, $desktopsLarge, 27px, 42px);
+    @include font-size($mobilePhones, $desktopsLarge, 23px, 42px);
     font-weight: 400;
     color: $textColor;
     padding-top: 25px;

@@ -1,0 +1,135 @@
+@media (max-width: $mobilePhones) {}
+
+@media (min-width: $mobilePhones) {}
+
+@media (min-width: $tablets) {}
+
+@media (min-width: $laptops) {
+    #moreProducts {
+        .sectionTitle {
+            width: 90%;
+            margin: 25px auto;
+        }
+        .allProductsContent {
+            padding: 0px 18px;
+            width: 90%;
+            margin: 0 auto;
+            .product {
+                margin-bottom: 0;
+                &.item4 {
+                    width: 25%;
+                    padding: 7px;
+                }
+                &.item4.full {
+                    width: 50%;
+                    .productContent {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+                &.item2 {
+                    width: 50%;
+                    padding: 7px;
+                }
+                &.item2.full {
+                    width: 100%;
+                    .productContent {
+                        width: 50%;
+                        margin: 0 auto;
+                    }
+                }
+                .productContent {
+                    .productInfo {
+                        padding: 10px 5px;
+                        padding-bottom: 10px;
+                        text-align: center;
+                        h4 {
+                            height: 20px;
+                            line-height: 1.33;
+                            letter-spacing: 0.7px;
+                            padding-bottom: 5px;
+                            text-align: center;
+                            margin-bottom: 5px;
+                            text-decoration: none;
+                            transition: all .5s ease;
+                        }
+                        .price {
+                            font-weight: 700;
+                            color: #313131;
+                            font-size: 18px;
+                            transition: all .5s ease;
+                        }
+                        .colors {
+                            p {
+                                padding: 5px 0px;
+                                font-weight: 500;
+                                transform: translateX(-3px);
+                                display: block;
+                                transition: all .5s ease;
+                            }
+                            ul {
+                                padding: 5px;
+                                transform: translateY(0);
+                                opacity: 0;
+                                .colorContent {
+                                    border: 1px solid #e5e5e5;
+                                    width: 16px;
+                                    margin-right: 5px;
+                                    height: 16px;
+                                    cursor: pointer;
+                                    .color-box {
+                                        display: inline-block;
+                                        width: 10px;
+                                        height: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .imgContent {
+                        &:hover .frontPicture {
+                            opacity: 0;
+                            z-index: 1;
+                        }
+                        &:hover .backPicture {
+                            opacity: 1;
+                            z-index: 2;
+                        }
+                        &:active .frontPicture {
+                            opacity: 1;
+                            z-index: 2;
+                        }
+                        &:active .backPicture {
+                            opacity: 0;
+                            z-index: 1;
+                        }
+                        .imgContentBottom {
+                            padding: 10px;
+                            .collections {
+                                margin-bottom: 5px;
+                            }
+                            .sizeContent {
+                                .sizeSelect {
+                                    width: 50%;
+                                    height: 25px;
+                                    li {
+                                        height: 25px;
+                                        padding: 0px 10px;
+                                        img {
+                                            width: 12px;
+                                            height: auto;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $desktops) {}
+
+@media (min-width: $desktopsLarge) {}
